@@ -235,7 +235,7 @@ Inputs.table(filtsumm)
 
 ## {.sidebar}
 ```{r}
-ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status)) %>% filter(!Species %in% "Candida albicans"))
+ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status)))
 ```
 
 ```{ojs}
@@ -245,6 +245,7 @@ viewof Species = Inputs.select(["Aspergillus flavus species complex",
 "Aspergillus niger species complex",
 "Candida dubliniensis",
 "Candida glabrata",
+"Candida albicans",
 "Candida guilliermondii",
 "Candida kefyr",
 "Candida krusei",
