@@ -1,0 +1,333 @@
+---
+title: "Exploring Vivli AMR Dataset"
+format: 
+  dashboard:
+    self-contained: false
+    scrolling: false
+    orientation: rows
+editor: source
+---
+
+```{r data, cache=TRUE}
+library(foundry)
+
+vivli <- datasets.read_table("vivli_sentry_data_july2023_fungi_cdc")
+ecvs_clsi <- datasets.read_table("ecvs_clsi_breakpoints___table1")
+whoregions <- datasets.read_table("ecvs_clsi_breakpoints___whoregions")
+```
+
+```{r pkgs}
+library(tidyverse)
+library(foundry)
+library(DT)
+```
+
+
+```{r setup, cache=TRUE}
+# first figure out which species x drug combos we want to run models on
+species_for_stats <-
+  vivli %>%
+  count(Species) %>%
+  filter(n > 1000)
+
+# visualizations and tables
+species_for_tables <-
+  vivli %>%
+  count(Species) %>%
+  filter(n > 100)
+
+# stats
+vivli_long <-
+  vivli %>%
+  select(-ends_with("CLSI_CLSI")) %>%
+  pivot_longer(Amphotericin_B_CLSI:Voriconazole_CLSI, 
+               names_to = "drug", values_to = "mic") %>%
+  mutate(drug = gsub("_CLSI", "", drug)) %>%
+  mutate(drug = gsub("_", " ", drug)) %>%
+  left_join(whoregions %>% select(-Year), by = c("Country" = "Entity"))
+
+vivli_long <-
+  vivli_long %>%
+  left_join(ecvs_clsi, by = c("Species", "drug" = "Antifungal")) %>%
+  mutate(resistance_status = case_when(
+    !is.na(Resistance_lower) & mic >= Resistance_lower ~ "Resistant", 
+    !is.na(SDD_upper) & mic < Resistance_lower & mic >= SDD_upper ~ "SDD", 
+    !is.na(Intermediate_upper) & !is.na(SDD_upper) & mic < SDD_upper & mic >= Intermediate_upper ~ "Intermediate", 
+    !is.na(Intermediate_upper) & is.na(SDD_upper) & mic < Resistance_lower & mic >= Intermediate_upper ~ "Intermediate", 
+    !is.na(Sensitive) & mic <= Sensitive_upper ~ "Sensitive", 
+    TRUE ~ NA_character_),
+        ecv_status = ifelse(mic <= `_ECV`, "WT", "non-WT")) %>%
+  select(-any_of(colnames(ecvs_clsi)[colnames(ecvs_clsi) != "Species"]))
+
+vivli_select <-
+  vivli_long %>%
+  filter(Species %in% species_for_tables$Species)
+
+species_by_drug <-
+  vivli_select %>%
+  group_by(drug, Species) %>%
+  summarize(n_tested = sum(!is.na(mic)), 
+            n_isos = n(), 
+            prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)), 
+            prop_resistant = sum(resistance_status %in% "Resistant") / sum(!is.na(resistance_status)))
+
+modal_mics <- 
+  vivli_select %>%
+  filter(!is.na(mic)) %>%
+  group_by(drug, Species) %>%
+  count(mic) %>%
+  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
+  mutate(prop_tested = n/n_tested) %>%
+  select(-n_tested) %>%
+  mutate(modal = n == max(n)) 
+
+mic_sparks <-
+  modal_mics %>%
+  summarize(mic_dist = sparkline::spk_chr(xvalues = mic, values = n, 
+                                          tooltipFormat = 'mic: {{x}}; n: {{y}}',
+                                          maxSpotColor = "red", 
+                                          minSpotColor = "", 
+                                          spotColor = ""),
+            mic_props = list(prop_tested))
+
+species_by_drug <- 
+  species_by_drug %>%
+  left_join(modal_mics %>% filter(modal == TRUE) %>% 
+              select(drug, Species, modal_mic = mic)) %>%
+  left_join(mic_sparks) %>%
+  mutate(mic_dist = ifelse(is.na(modal_mic), spk_chr(0), mic_dist))
+
+
+# formatted cutoff table by species x drug
+cutoffs_formatted <-
+  ecvs_clsi %>%
+  select(-ends_with("upper"), -ends_with("lower"), -`_ECV`) %>%
+  pivot_longer(-c(Species, Antifungal)) %>%
+  group_by(Species, Antifungal) %>%
+  filter(!is.na(value)) %>%
+  summarize(clsi = glue::glue_collapse(glue::glue("{name}: {value}"), sep = " <br>")) %>%
+  right_join(ecvs_clsi %>% select(Species, Antifungal, ecv = `_ECV`)) 
+
+species_by_drug <-
+  species_by_drug %>%
+  left_join(cutoffs_formatted, by = c("Species", "drug" = "Antifungal"))
+
+```
+
+
+# Overview
+
+This is a prototype dashboard for exploring trends in antifungal resistance
+in pharmaceutical surveillance data.
+
+More info here that we want to include. 
+
+CDC Disclaimer. 
+
+# MIC values by species and drug
+
+## Table of mic stats 
+
+```{r}
+DT::datatable(
+  species_by_drug %>% 
+  arrange(Species) %>%
+  mutate(
+    tested = glue::glue("{n_tested}/{n_isos} ({round(n_tested/n_isos*100, 2)}%)")) %>%
+  select(-mic_props,
+         -n_tested, -n_isos, -mic_dist),
+  extensions = 'RowGroup',
+  options = list(rowGroup = list(dataSrc = 2)),
+  escape = FALSE,
+  colnames =  c("Tested" = "tested",
+                "Percent non-WT" = "prop_nonWT", 
+                "Percent Resistant" = "prop_resistant", 
+                "Modal MIC" = "modal_mic"), 
+  rownames = "") %>% 
+  formatPercentage(c('Percent non-WT', 'Percent Resistant'), digits = 2) 
+```
+
+# Species specific explorations
+```{r}
+
+vivli_summ <- 
+  vivli_select %>% 
+  pivot_longer(c(Gender, Age_Group, WHO_region, Speciality, Source)) %>%
+  group_by(Species, drug, name, value) %>%
+  summarize(prop_resistant = sum(resistance_status %in% "Resistant")/sum(!is.na(mic)),
+            n_tested = sum(!is.na(mic)), 
+            n_isos = n(), 
+            prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)),
+            n_resistant = sum(resistance_status %in% "Resistant"), 
+            tested = sum(!is.na(mic))) %>%
+  mutate(
+    tested = glue::glue("{n_tested}/{n_isos} ({round(n_tested/n_isos*100, 2)}%)")) %>%
+  select(-n_tested, -n_isos)
+
+vivli_mics <-
+  vivli_select %>% 
+  pivot_longer(c(Gender, Age_Group, Speciality, Source, WHO_region)) %>%
+  group_by(Species, drug, name, value) %>%
+  filter(!is.na(mic)) %>%
+  count(mic) %>%
+  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
+  mutate(prop_tested = n/n_tested) %>%
+  select(-n_tested) %>%
+  mutate(modal = n == max(n)) 
+
+vivli_summ <- 
+  vivli_summ %>%
+  left_join(vivli_mics %>% filter(modal == TRUE) %>% 
+              select(drug, Species, name, value, modal_mic = mic)) 
+
+```
+
+## {.sidebar}
+
+```{r}
+ojs_define(summ = vivli_summ %>% arrange(Species, drug, name))
+```
+
+```{ojs}
+
+viewof speciessumm = Inputs.select(["Aspergillus flavus species complex",
+"Aspergillus fumigatus",
+"Aspergillus niger species complex",
+"Candida dubliniensis",
+"Candida glabrata",
+"Candida guilliermondii",
+"Candida kefyr",
+"Candida krusei",
+"Candida lusitaniae",
+"Candida orthopsilosis",
+"Candida parapsilosis",
+"Candida tropicalis",
+"Cryptococcus neoformans var. grubii"], {value: "Aspergillus fumigatus", label: "Species"})
+
+
+viewof drugsumm = Inputs.select(["Amphotericin B",
+"Anidulafungin","Caspofungin","Fluconazole","Flucytosine","Isavuconazole","Itraconazole","Micafungin","Posaconazole","Voriconazole"], {value: "Amphotericin B", label: "Antifungal"})
+
+
+viewof namesumm = Inputs.select(["Age_Group", "Gender", "Source", "Speciality", "WHO_region"], {label: "Select a covariate:"})
+
+
+```
+
+## tables 
+
+### Table across covariates
+```{ojs}
+//| output: false
+filtsumm = transpose(summ).filter(function(data) {
+  return drugsumm.includes(data.drug) &&
+         speciessumm.includes(data.Species) &&
+         namesumm.includes(data.name);
+})
+
+```
+
+```{ojs}
+Inputs.table(filtsumm)
+```
+
+# Explore the data for a specific drug and species
+
+## {.sidebar}
+```{r}
+ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status)) %>% filter(!Species %in% "Candida albicans"))
+```
+
+```{ojs}
+
+viewof Species = Inputs.select(["Aspergillus flavus species complex",
+"Aspergillus fumigatus",
+"Aspergillus niger species complex",
+"Candida dubliniensis",
+"Candida glabrata",
+"Candida guilliermondii",
+"Candida kefyr",
+"Candida krusei",
+"Candida lusitaniae",
+"Candida orthopsilosis",
+"Candida parapsilosis",
+"Candida tropicalis",
+"Cryptococcus neoformans var. grubii"], {value: "Aspergillus fumigatus", label: "Species"})
+
+
+viewof drug = Inputs.select(["Amphotericin B",
+"Anidulafungin","Caspofungin","Fluconazole","Flucytosine","Isavuconazole","Itraconazole","Micafungin","Posaconazole","Voriconazole"], {value: "Amphotericin B", label: "Antifungal"})
+
+
+viewof metric = Inputs.select(["ecv_status", "resistance_status"], {value: "resistance_status", label: "Select a measure:"})
+
+viewof valuetype = Inputs.select(["proportion", "count"], {value: "count", label: "Choose counts or proportions of isolates"})
+
+```
+
+
+
+```{ojs}
+//| output: false
+filtered = transpose(data).filter(function(data) {
+  return drug.includes(data.drug) &&
+         Species.includes(data.Species);
+})
+
+
+col_mets = {
+  if(metric == "resistance_status"){
+   return ["Sensitive", "Intermediate", "SDD", "Resistant", "No cutoffs"]
+  } else{
+   return ["WT", "non-WT", "No ECV"]
+  }
+}
+
+cols = {
+  if(metric == "resistance_status"){
+   return ["#4269d0","#efb118","#ff725c","#6cc5b0", "grey"]
+  } else{
+   return ["#4269d0","#efb118", "grey"]
+  }
+}
+
+fctvals = {
+  if(valuetype == "proportion"){
+   return "proportion-facet"
+  } else{
+   return "count"
+  }
+}
+```
+
+## plots 
+
+```{ojs}
+Plot.barY(
+  filtered,
+  Plot.groupX(
+    { y: valuetype }, 
+    { x: "mic", 
+      fill: metric, 
+      tip: true
+})
+).plot({ color: { legend: true, 
+  domain: col_mets,
+  range: cols} })
+```
+
+### By categories {.flow}
+
+```{ojs}
+//| title: Explore a category
+
+viewof facet = Inputs.select(["Age_Group", "Year", "WHO_region"], {value: "Age_Group", label: "Look across covariates:"})
+
+Plot.barY(
+  filtered,
+  Plot.groupX({ y: fctvals }, { x: "mic", fill: metric, fx: facet, tip: true})
+).plot({ color: { legend: true, 
+  domain: col_mets,
+  range: cols} })
+
+```
