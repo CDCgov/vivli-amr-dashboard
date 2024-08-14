@@ -8,7 +8,7 @@ format:
 editor: source
 ---
 
-```{r data, cache=TRUE}
+```{r data, cache=FALSE}
 library(foundry)
 
 vivli <- datasets.read_table("vivli_sentry_data_july2023_fungi_cdc")
@@ -23,7 +23,7 @@ library(DT)
 ```
 
 
-```{r setup, cache=TRUE}
+```{r setup, cache=FALSE}
 # first figure out which species x drug combos we want to run models on
 # visualizations and tables
 species_for_tables <-
@@ -224,7 +224,7 @@ Inputs.table(filtsumm)
 ## {.sidebar}
 ```{r}
 ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status), 
-                                          ecv_status = ifelse(is.na(ecv_status), "No ECV", ecv_status)))
+                                          ecv_status = ifelse(is.na(ecv_status), "No ECV", ecv_status)) %>% filter(!is.na(mic)))
 ```
 
 ```{ojs}
@@ -277,7 +277,7 @@ fctvals = {
 }
 ```
 
-## plots 
+## plots {width = 40%}
 
 ```{ojs}
 Plot.barY(
@@ -290,10 +290,11 @@ Plot.barY(
 })
 ).plot({ color: { legend: true, 
   domain: col_mets,
-  range: cols} })
+  range: cols},
+  height: 600})
 ```
 
-### By categories {.flow}
+## By categories {.flow}
 
 ```{ojs}
 //| title: Explore a category
@@ -302,9 +303,10 @@ viewof facet = Inputs.select(["Age_Group", "Year", "WHO_region"], {value: "Age_G
 
 Plot.barY(
   filtered,
-  Plot.groupX({ y: fctvals }, { x: "mic", fill: metric, fx: facet, tip: true})
+  Plot.groupX({ y: fctvals }, { x: "mic", fill: metric, fy: facet, tip: true})
 ).plot({ color: { legend: true, 
   domain: col_mets,
-  range: cols} })
+  range: cols},
+  height: 800})
 
 ```
