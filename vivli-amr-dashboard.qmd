@@ -25,16 +25,11 @@ library(DT)
 
 ```{r setup, cache=TRUE}
 # first figure out which species x drug combos we want to run models on
-species_for_stats <-
-  vivli %>%
-  count(Species) %>%
-  filter(n > 1000)
-
 # visualizations and tables
 species_for_tables <-
   vivli %>%
   count(Species) %>%
-  filter(n > 100)
+  filter(n >= 10)
 
 # stats
 vivli_long <-
@@ -81,21 +76,10 @@ modal_mics <-
   select(-n_tested) %>%
   mutate(modal = n == max(n)) 
 
-mic_sparks <-
-  modal_mics %>%
-  summarize(mic_dist = sparkline::spk_chr(xvalues = mic, values = n, 
-                                          tooltipFormat = 'mic: {{x}}; n: {{y}}',
-                                          maxSpotColor = "red", 
-                                          minSpotColor = "", 
-                                          spotColor = ""),
-            mic_props = list(prop_tested))
-
 species_by_drug <- 
   species_by_drug %>%
   left_join(modal_mics %>% filter(modal == TRUE) %>% 
-              select(drug, Species, modal_mic = mic)) %>%
-  left_join(mic_sparks) %>%
-  mutate(mic_dist = ifelse(is.na(modal_mic), spk_chr(0), mic_dist))
+              select(drug, Species, modal_mic = mic))
 
 
 # formatted cutoff table by species x drug
@@ -124,6 +108,19 @@ More info here that we want to include.
 
 CDC Disclaimer. 
 
+Species table with number of isolates and ECVs and cutoffs where available. 
+(maybe also mention source of ecvs and cutoffs?)
+
+```{r}
+species_for_tables %>%
+  left_join(cutoffs_formatted) %>%
+  DT::datatable(colnames =  c("Number of isolates" = "n",
+                "CLSI Cutoffs" = "clsi", 
+                "ECV" = "ecv"), 
+                escape = FALSE)
+```
+
+
 # MIC values by species and drug
 
 ## Table of mic stats 
@@ -134,8 +131,7 @@ DT::datatable(
   arrange(Species) %>%
   mutate(
     tested = glue::glue("{n_tested}/{n_isos} ({round(n_tested/n_isos*100, 2)}%)")) %>%
-  select(-mic_props,
-         -n_tested, -n_isos, -mic_dist),
+  select(-n_tested, -n_isos),
   extensions = 'RowGroup',
   options = list(rowGroup = list(dataSrc = 2)),
   escape = FALSE,
@@ -186,23 +182,12 @@ vivli_summ <-
 
 ```{r}
 ojs_define(summ = vivli_summ %>% arrange(Species, drug, name))
+ojs_define(specs = species_for_tables %>% select(Species))
 ```
 
 ```{ojs}
 
-viewof speciessumm = Inputs.select(["Aspergillus flavus species complex",
-"Aspergillus fumigatus",
-"Aspergillus niger species complex",
-"Candida dubliniensis",
-"Candida glabrata",
-"Candida guilliermondii",
-"Candida kefyr",
-"Candida krusei",
-"Candida lusitaniae",
-"Candida orthopsilosis",
-"Candida parapsilosis",
-"Candida tropicalis",
-"Cryptococcus neoformans var. grubii"], {value: "Aspergillus fumigatus", label: "Species"})
+viewof speciessumm = Inputs.select(speciesls.map((d) => d.Species), {value: "Aspergillus fumigatus", label: "Species"})
 
 
 viewof drugsumm = Inputs.select(["Amphotericin B",
@@ -225,6 +210,9 @@ filtsumm = transpose(summ).filter(function(data) {
          namesumm.includes(data.name);
 })
 
+
+speciesls = transpose(specs)
+
 ```
 
 ```{ojs}
@@ -235,25 +223,13 @@ Inputs.table(filtsumm)
 
 ## {.sidebar}
 ```{r}
-ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status)))
+ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status), 
+                                          ecv_status = ifelse(is.na(ecv_status), "No ECV", ecv_status)))
 ```
 
 ```{ojs}
 
-viewof Species = Inputs.select(["Aspergillus flavus species complex",
-"Aspergillus fumigatus",
-"Aspergillus niger species complex",
-"Candida dubliniensis",
-"Candida glabrata",
-"Candida albicans",
-"Candida guilliermondii",
-"Candida kefyr",
-"Candida krusei",
-"Candida lusitaniae",
-"Candida orthopsilosis",
-"Candida parapsilosis",
-"Candida tropicalis",
-"Cryptococcus neoformans var. grubii"], {value: "Aspergillus fumigatus", label: "Species"})
+viewof Species = Inputs.select(speciesls.map((d) => d.Species), {value: "Aspergillus fumigatus", label: "Species"})
 
 
 viewof drug = Inputs.select(["Amphotericin B",
