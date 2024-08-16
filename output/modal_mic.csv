@@ -1,0 +1,47 @@
+Species,Amphotericin B,Anidulafungin,Caspofungin,Fluconazole,Flucytosine,Isavuconazole,Itraconazole,Micafungin,Posaconazole,Voriconazole
+Aspergillus nidulans species complex,2,0.015,0.015,NA,64,0.12,0.5,0.008,0.25,0.12
+Aspergillus ustus species complex,1,0.008,2,NA,64,2,16,0.015,16,4
+Candida auris,1,NA,NA,128,0.5,0.008,1,NA,0.12,1
+Candida fabianii,1,0.06,0.03,2,0.5,0.12,0.5,0.03,0.5,0.03
+Candida fermentati,1,1,0.25,2,0.5,0.12,0.5,0.25,0.25,0.06
+Candida haemulonii,1,NA,0.06,NA,0.5,0.03,0.5,0.12,NA,NA
+Candida inconspicua,0.5,0.03,0.03,16,2,0.25,0.5,0.03,0.25,0.25
+Candida lipolytica,1,0.25,0.25,2,64,0.06,0.25,0.5,0.25,0.03
+Candida nivariensis,1,0.06,0.03,2,1,0.015,0.5,0.015,0.25,0.06
+Exophiala dermatitidis,0.5,16,8,NA,NA,1,0.5,16,0.25,0.12
+Fusarium oxysporum species complex,2,8,8,NA,NA,16,16,8,16,8
+Fusarium solani species complex,2,16,16,NA,64,16,16,16,16,8
+Geotrichum clavatum,1,4,8,8,0.5,0.5,0.5,1,0.5,0.25
+Gibberella fujikuroi species complex,2,8,8,NA,64,16,16,8,16,2
+Lomentospora prolificans,8,4,8,NA,64,16,16,8,16,16
+Magnusiomyces capitatus,1,4,16,8,0.5,0.5,0.25,16,0.25,0.25
+Paecilomyces lilacinus,8,0.03,0.06,NA,64,0.5,2,0.03,0.5,0.25
+Paecilomyces variotii,0.25,0.008,1,NA,1,16,0.5,0.008,0.25,4
+Rasamsonia argillacea species complex,1,0.008,0.015,NA,NA,16,16,0.008,2,16
+Rhizopus microsporus group,1,8,8,NA,64,1,1,8,0.5,8
+Rhizopus oryzae species complex,1,8,8,NA,64,1,1,8,0.5,8
+Sarocladium kiliense,4,4,0.25,NA,64,16,16,16,16,2
+Scedosporium apiospermum / Scedosporium boydii,4,4,8,NA,64,8,16,0.5,2,1
+Scedosporium aurantiacum,8,8,8,NA,64,16,16,8,2,0.5
+Aspergillus flavus species complex,NA,0.008,NA,NA,64,NA,NA,0.015,NA,NA
+Aspergillus fumigatus,NA,0.015,NA,NA,64,NA,NA,0.008,0.25,NA
+Aspergillus niger species complex,NA,0.008,NA,NA,64,NA,NA,0.008,NA,NA
+Aspergillus terreus species complex,NA,0.015,NA,NA,64,NA,NA,0.008,NA,NA
+Aspergillus versicolor species complex,NA,0.015,0.015,NA,64,1,0.5,0.03,0.5,1
+Candida pelliculosa,NA,0.015,0.03,NA,0.5,0.03,NA,NA,NA,NA
+Cryptococcus gattii species complex,NA,8,8,NA,NA,0.12,NA,8,0.25,NA
+Cryptococcus neoformans,NA,32,16,NA,NA,0.03,NA,32,NA,NA
+Rhodotorula mucilaginosa,NA,8,8,256,0.5,0.5,NA,8,NA,NA
+Trichosporon asahii,NA,8,8,NA,4,0.12,NA,8,NA,0.06
+Candida dubliniensis,NA,NA,0.03,NA,0.5,0.002,NA,NA,NA,0.008
+Candida kefyr,NA,NA,0.015,NA,0.5,0.002,NA,NA,NA,0.008
+Candida krusei,NA,NA,NA,32,16,0.25,NA,NA,NA,NA
+Candida albicans,NA,NA,NA,NA,0.5,0.002,0.06,NA,NA,NA
+Candida glabrata,NA,NA,NA,NA,0.5,0.06,NA,NA,NA,NA
+Candida guilliermondii,NA,NA,NA,NA,0.5,0.12,NA,NA,NA,0.06
+Candida lusitaniae,NA,NA,NA,NA,0.5,0.008,NA,NA,NA,0.008
+Candida metapsilosis,NA,NA,NA,NA,0.5,0.015,NA,NA,NA,NA
+Candida orthopsilosis,NA,NA,NA,NA,0.5,0.015,NA,NA,NA,NA
+Candida parapsilosis,NA,NA,NA,NA,0.5,0.008,NA,NA,NA,NA
+Candida tropicalis,NA,NA,NA,NA,0.5,0.015,NA,NA,NA,NA
+Saccharomyces cerevisiae,NA,NA,NA,NA,0.5,0.12,NA,NA,NA,NA

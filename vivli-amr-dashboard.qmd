@@ -8,120 +8,128 @@ format:
 editor: source
 ---
 
-```{r data, cache=FALSE}
-library(foundry)
-
-vivli <- datasets.read_table("vivli_sentry_data_july2023_fungi_cdc")
-ecvs_clsi <- datasets.read_table("ecvs_clsi_breakpoints___table1")
-whoregions <- datasets.read_table("ecvs_clsi_breakpoints___whoregions")
-```
-
-```{r pkgs}
+```{r setup}
 library(tidyverse)
-library(foundry)
 library(DT)
+library(gt)
+
+
+vivli_summ <- readr::read_csv('data/vivli_summ.csv')
+vivli_select <- readr::read_csv('data/vivli_select.csv')
+species_by_drug <- readr::read_csv('data/species_by_drug.csv')
+cutoffs_formatted <- readr::read_csv('data/cutoffs_formatted.csv')
+
+vivli_summreg <- vivli_summ %>% filter(name %in% c("Country", "WHO_region", "Year"))
+vivli_summ <- vivli_summ %>% filter(!name %in% c("Country"))
 ```
-
-
-```{r setup, cache=FALSE}
-# first figure out which species x drug combos we want to run models on
-# visualizations and tables
-species_for_tables <-
-  vivli %>%
-  count(Species) %>%
-  filter(n >= 10)
-
-# stats
-vivli_long <-
-  vivli %>%
-  select(-ends_with("CLSI_CLSI")) %>%
-  pivot_longer(Amphotericin_B_CLSI:Voriconazole_CLSI, 
-               names_to = "drug", values_to = "mic") %>%
-  mutate(drug = gsub("_CLSI", "", drug)) %>%
-  mutate(drug = gsub("_", " ", drug)) %>%
-  left_join(whoregions %>% select(-Year), by = c("Country" = "Entity"))
-
-vivli_long <-
-  vivli_long %>%
-  left_join(ecvs_clsi, by = c("Species", "drug" = "Antifungal")) %>%
-  mutate(resistance_status = case_when(
-    !is.na(Resistance_lower) & mic >= Resistance_lower ~ "Resistant", 
-    !is.na(SDD_upper) & mic < Resistance_lower & mic >= SDD_upper ~ "SDD", 
-    !is.na(Intermediate_upper) & !is.na(SDD_upper) & mic < SDD_upper & mic >= Intermediate_upper ~ "Intermediate", 
-    !is.na(Intermediate_upper) & is.na(SDD_upper) & mic < Resistance_lower & mic >= Intermediate_upper ~ "Intermediate", 
-    !is.na(Sensitive) & mic <= Sensitive_upper ~ "Sensitive", 
-    TRUE ~ NA_character_),
-        ecv_status = ifelse(mic <= `_ECV`, "WT", "non-WT")) %>%
-  select(-any_of(colnames(ecvs_clsi)[colnames(ecvs_clsi) != "Species"]))
-
-vivli_select <-
-  vivli_long %>%
-  filter(Species %in% species_for_tables$Species)
-
-species_by_drug <-
-  vivli_select %>%
-  group_by(drug, Species) %>%
-  summarize(n_tested = sum(!is.na(mic)), 
-            n_isos = n(), 
-            prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)), 
-            prop_resistant = sum(resistance_status %in% "Resistant") / sum(!is.na(resistance_status)))
-
-modal_mics <- 
-  vivli_select %>%
-  filter(!is.na(mic)) %>%
-  group_by(drug, Species) %>%
-  count(mic) %>%
-  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
-  mutate(prop_tested = n/n_tested) %>%
-  select(-n_tested) %>%
-  mutate(modal = n == max(n)) 
-
-species_by_drug <- 
-  species_by_drug %>%
-  left_join(modal_mics %>% filter(modal == TRUE) %>% 
-              select(drug, Species, modal_mic = mic))
-
-
-# formatted cutoff table by species x drug
-cutoffs_formatted <-
-  ecvs_clsi %>%
-  select(-ends_with("upper"), -ends_with("lower"), -`_ECV`) %>%
-  pivot_longer(-c(Species, Antifungal)) %>%
-  group_by(Species, Antifungal) %>%
-  filter(!is.na(value)) %>%
-  summarize(clsi = glue::glue_collapse(glue::glue("{name}: {value}"), sep = " <br>")) %>%
-  right_join(ecvs_clsi %>% select(Species, Antifungal, ecv = `_ECV`)) 
-
-species_by_drug <-
-  species_by_drug %>%
-  left_join(cutoffs_formatted, by = c("Species", "drug" = "Antifungal"))
-
-```
-
 
 # Overview
 
-This is a prototype dashboard for exploring trends in antifungal resistance
-in pharmaceutical surveillance data.
+## information {.tabset}
 
-More info here that we want to include. 
+::: {.card title="Background information"}
 
-CDC Disclaimer. 
+As part of the [2024 Vivli AMR Surveillance Data Challenge](https://amr.vivli.org/data-challenge/data-challenge-overview/) , 
+we explored antifungal suceptibility testing data for fungal isolates collected for pharmaceutical surveillance. 
 
-Species table with number of isolates and ECVs and cutoffs where available. 
-(maybe also mention source of ecvs and cutoffs?)
+Explore summaries of MICs [by species and antifungal](#summary-of-mics-by-species-and-antifungal), [stratified by additional covariates such as Age, Gender, and WHO Region](#mics-stratified-by-covariates), and [over time and region/country](#mics-over-time-and-regionaly)
+
+For fungi that have established Clinical and Laboratory Standards Institute (CLSI) breakpoints, we analysed the percent of resistant isolates by antifungal, year, and World Health Organization (WHO) region. For fungi that have established CLSI Epidemiological cut-off values, we analyzed the percent of non-wildtype isolates (percent of isolates above the ECV) by antifungal, year, and World Health Organization (WHO) region. For fungi without ECVs, we determined the modal MICs by antifungal, year, and WHO region.  
+
+#### More Details
+
+We used the Antimicrobial Testing Leadership and Surveillance (ATLAS) antifungal dataset through the [2024 Vivli AMR Surveillance Data Challenge](https://amr.vivli.org/data-challenge/data-challenge-overview/) to explore antifungal minimum inhibitory concentrations (MICs). The ATLAS programme through the SENTRY platform data allows for monitoring of antifungal susceptibility and resistance trending of key antifungals from across 80 countries. The antifungal data from the SENTRY platform are generated by standardized antifungal susceptibility methods performed at a central laboratory. Isolates were collected from local labs and collected specifically for surveillance. Antifungals tested were amphotericin B, anidulafungin, caspofungin, fluconazole, flucytosine, isavuconazole, itraconazole, micafungin, posaconazole, and voriconazole. Only species with ≥ 10 isolates with AFST data were included. Species of mold within a species complex were combined. 
+
+#### Disclaimers
+
+The findings and conclusions of this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control (CDC).
+
+**General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
+
+#### Public Domain Standard Notice
+This repository constitutes a work of the United States Government and is not
+subject to domestic copyright protection under 17 USC § 105. This repository is in
+the public domain within the United States, and copyright and related rights in
+the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+All contributions to this repository will be released under the CC0 dedication. By
+submitting a pull request you are agreeing to comply with this waiver of
+copyright interest.
+
+#### License Standard Notice
+The repository utilizes code licensed under the terms of the Apache Software
+License and therefore is licensed under ASL v2 or later.
+
+This source code in this repository is free: you can redistribute it and/or modify it under
+the terms of the Apache Software License version 2, or (at your option) any
+later version.
+
+This source code in this repository is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the Apache Software License for more details.
+
+You should have received a copy of the Apache Software License along with this
+program. If not, see http://www.apache.org/licenses/LICENSE-2.0.html
+
+The source code forked from other open source projects will inherit its license.
+
+#### Privacy Standard Notice
+This repository contains only non-sensitive, publicly available data and
+information. All material and community participation is covered by the
+[Disclaimer](DISCLAIMER.md)
+and [Code of Conduct](code-of-conduct.md).
+For more information about CDC's privacy policy, please visit [http://www.cdc.gov/other/privacy.html](https://www.cdc.gov/other/privacy.html).
+
+#### Contributing Standard Notice
+Anyone is encouraged to contribute to the repository by [forking](https://help.github.com/articles/fork-a-repo)
+and submitting a pull request. (If you are new to GitHub, you might start with a
+[basic tutorial](https://help.github.com/articles/set-up-git).) By contributing
+to this project, you grant a world-wide, royalty-free, perpetual, irrevocable,
+non-exclusive, transferable license to all users under the terms of the
+[Apache Software License v2](http://www.apache.org/licenses/LICENSE-2.0.html) or
+later.
+
+All comments, messages, pull requests, and other submissions received through
+CDC including this GitHub page may be subject to applicable federal law, including but not limited to the Federal Records Act, and may be archived. Learn more at [http://www.cdc.gov/other/privacy.html](http://www.cdc.gov/other/privacy.html).
+
+#### Records Management Standard Notice
+This repository is not a source of government records, but is a copy to increase
+collaboration and collaborative potential. All government records will be
+published through the [CDC web site](http://www.cdc.gov).
+
+#### Additional Standard Notices
+Please refer to [CDC's Template Repository](https://github.com/CDCgov/template) for more information about [contributing to this repository](https://github.com/CDCgov/template/blob/main/CONTRIBUTING.md), [public domain notices and disclaimers](https://github.com/CDCgov/template/blob/main/DISCLAIMER.md), and [code of conduct](https://github.com/CDCgov/template/blob/main/code-of-conduct.md).
+
+:::
+
+### Table of Species included, as well as CLSI breakpoints and ECVs
 
 ```{r}
-species_for_tables %>%
+species_by_drug %>%
+  select(Species, Antifungal = drug, n_tested) %>%
   left_join(cutoffs_formatted) %>%
-  DT::datatable(colnames =  c("Number of isolates" = "n",
-                "CLSI Cutoffs" = "clsi", 
-                "ECV" = "ecv"), 
-                escape = FALSE)
+  pivot_wider(names_from = Antifungal, values_from = c(clsi, ecv, n_tested), 
+              names_glue = "{Antifungal}_{.value}") %>%
+  mutate(across(everything(), ~replace_na(as.character(.x), "--"))) %>%
+  gt() %>%
+  fmt_markdown(columns = ends_with("clsi")) %>%
+  tab_spanner(label = "Itraconazole", columns = starts_with("Itra")) %>%
+  tab_spanner(label = "Fluconazole", columns = starts_with("Fluco")) %>%
+  tab_spanner(label = "Voriconazole", columns = starts_with("Vori")) %>%
+  tab_spanner(label = "Isavuconazole", columns = starts_with("Isavu")) %>%
+  tab_spanner(label = "Flucytosine", columns = starts_with("Flucyto")) %>%
+  tab_spanner(label = "Amphotericin B", columns = starts_with("Ampho")) %>%
+  tab_spanner(label = "Anidulafungin", columns = starts_with("Anidula")) %>%
+  tab_spanner(label = "Caspofungin", columns = starts_with("Caspo")) %>%
+  tab_spanner(label = "Micafungin", columns = starts_with("Mica")) %>%
+  cols_label(
+    ends_with("_n_tested") ~ "Isolates tested", 
+    ends_with("_clsi") ~ "CLSI cutoffs", 
+    ends_with("_ecv") ~ "ECV",
+  ) 
 ```
 
 
-# MIC values by species and drug
+# Summary of MICs by species and antifungal
 
 ## Table of mic stats 
 
@@ -143,46 +151,13 @@ DT::datatable(
   formatPercentage(c('Percent non-WT', 'Percent Resistant'), digits = 2) 
 ```
 
-# Species specific explorations
-```{r}
-
-vivli_summ <- 
-  vivli_select %>% 
-  pivot_longer(c(Gender, Age_Group, WHO_region, Speciality, Source)) %>%
-  group_by(Species, drug, name, value) %>%
-  summarize(prop_resistant = sum(resistance_status %in% "Resistant")/sum(!is.na(mic)),
-            n_tested = sum(!is.na(mic)), 
-            n_isos = n(), 
-            prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)),
-            n_resistant = sum(resistance_status %in% "Resistant"), 
-            tested = sum(!is.na(mic))) %>%
-  mutate(
-    tested = glue::glue("{n_tested}/{n_isos} ({round(n_tested/n_isos*100, 2)}%)")) %>%
-  select(-n_tested, -n_isos)
-
-vivli_mics <-
-  vivli_select %>% 
-  pivot_longer(c(Gender, Age_Group, Speciality, Source, WHO_region)) %>%
-  group_by(Species, drug, name, value) %>%
-  filter(!is.na(mic)) %>%
-  count(mic) %>%
-  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
-  mutate(prop_tested = n/n_tested) %>%
-  select(-n_tested) %>%
-  mutate(modal = n == max(n)) 
-
-vivli_summ <- 
-  vivli_summ %>%
-  left_join(vivli_mics %>% filter(modal == TRUE) %>% 
-              select(drug, Species, name, value, modal_mic = mic)) 
-
-```
+# MICs stratified by covariates
 
 ## {.sidebar}
 
 ```{r}
 ojs_define(summ = vivli_summ %>% arrange(Species, drug, name))
-ojs_define(specs = species_for_tables %>% select(Species))
+ojs_define(specs = species_by_drug %>% distinct(Species) %>% select(Species))
 ```
 
 ```{ojs}
@@ -219,94 +194,164 @@ speciesls = transpose(specs)
 Inputs.table(filtsumm)
 ```
 
-# Explore the data for a specific drug and species
+<!-- # Explore the data for a specific drug and species -->
+
+<!-- ## {.sidebar} -->
+<!-- ```{r} -->
+<!-- ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status),  -->
+<!--                                           ecv_status = ifelse(is.na(ecv_status), "No ECV", ecv_status)) %>% filter(!is.na(mic))) -->
+<!-- ``` -->
+
+<!-- ```{ojs} -->
+
+<!-- viewof Species = Inputs.select(speciesls.map((d) => d.Species), {value: "Aspergillus fumigatus", label: "Species"}) -->
+
+
+<!-- viewof drug = Inputs.select(["Amphotericin B", -->
+<!-- "Anidulafungin","Caspofungin","Fluconazole","Flucytosine","Isavuconazole","Itraconazole","Micafungin","Posaconazole","Voriconazole"], {value: "Amphotericin B", label: "Antifungal"}) -->
+
+
+<!-- viewof metric = Inputs.select(["ecv_status", "resistance_status"], {value: "resistance_status", label: "Select a measure:"}) -->
+
+<!-- viewof valuetype = Inputs.select(["proportion", "count"], {value: "count", label: "Choose counts or proportions of isolates"}) -->
+
+<!-- ``` -->
+
+
+
+<!-- ```{ojs} -->
+<!-- //| output: false -->
+<!-- filtered = transpose(data).filter(function(data) { -->
+<!--   return drug.includes(data.drug) && -->
+<!--          Species.includes(data.Species); -->
+<!-- }) -->
+
+
+<!-- col_mets = { -->
+<!--   if(metric == "resistance_status"){ -->
+<!--    return ["Sensitive", "Intermediate", "SDD", "Resistant", "No cutoffs"] -->
+<!--   } else{ -->
+<!--    return ["WT", "non-WT", "No ECV"] -->
+<!--   } -->
+<!-- } -->
+
+<!-- cols = { -->
+<!--   if(metric == "resistance_status"){ -->
+<!--    return ["#4269d0","#efb118","#ff725c","#6cc5b0", "grey"] -->
+<!--   } else{ -->
+<!--    return ["#4269d0","#efb118", "grey"] -->
+<!--   } -->
+<!-- } -->
+
+<!-- fctvals = { -->
+<!--   if(valuetype == "proportion"){ -->
+<!--    return "proportion-facet" -->
+<!--   } else{ -->
+<!--    return "count" -->
+<!--   } -->
+<!-- } -->
+<!-- ``` -->
+
+<!-- ## plots {width = 40%} -->
+
+<!-- ```{ojs} -->
+<!-- Plot.barY( -->
+<!--   filtered, -->
+<!--   Plot.groupX( -->
+<!--     { y: valuetype },  -->
+<!--     { x: "mic",  -->
+<!--       fill: metric,  -->
+<!--       tip: true -->
+<!-- }) -->
+<!-- ).plot({ color: { legend: true,  -->
+<!--   domain: col_mets, -->
+<!--   range: cols}, -->
+<!--   marginTop: 100,  -->
+<!--   height: 600, -->
+<!--   style: {fontSize: "16px"}}) -->
+<!-- ``` -->
+
+<!-- ## By categories {.flow} -->
+
+<!-- ```{ojs} -->
+<!-- //| title: Explore a category -->
+
+<!-- viewof facet = Inputs.select(["Age_Group", "Year", "WHO_region"], {value: "Age_Group", label: "Look across covariates:"}) -->
+
+<!-- Plot.barY( -->
+<!--   filtered, -->
+<!--   Plot.groupX({ y: fctvals }, { x: "mic", fill: metric, fy: facet, tip: true}) -->
+<!-- ).plot({ color: { legend: true,  -->
+<!--   domain: col_mets, -->
+<!--   range: cols}, -->
+<!--   marginRight: 100,  -->
+<!--   marginTop: 100, -->
+<!--   marginBottom: 100,  -->
+<!--   height: 800, -->
+<!--   style: {fontSize: "16px"}}) -->
+
+<!-- ``` -->
+
+# MICs over time and regionally
 
 ## {.sidebar}
 ```{r}
-ojs_define(data = vivli_select %>% mutate(resistance_status = ifelse(is.na(resistance_status), "No cutoffs", resistance_status), 
-                                          ecv_status = ifelse(is.na(ecv_status), "No ECV", ecv_status)) %>% filter(!is.na(mic)))
+ojs_define(summreg = vivli_summreg %>% arrange(Species, drug, name))
 ```
 
 ```{ojs}
 
-viewof Species = Inputs.select(speciesls.map((d) => d.Species), {value: "Aspergillus fumigatus", label: "Species"})
+viewof specsexp = Inputs.select(speciesls.map((d) => d.Species), {value: "Aspergillus fumigatus", label: "Species"})
 
+viewof measure = Inputs.select(["prop_resistant", "prop_nonWT", "modal_mic"], {value: "prop_resistant", label: "Select a measure:"})
 
-viewof drug = Inputs.select(["Amphotericin B",
-"Anidulafungin","Caspofungin","Fluconazole","Flucytosine","Isavuconazole","Itraconazole","Micafungin","Posaconazole","Voriconazole"], {value: "Amphotericin B", label: "Antifungal"})
-
-
-viewof metric = Inputs.select(["ecv_status", "resistance_status"], {value: "resistance_status", label: "Select a measure:"})
-
-viewof valuetype = Inputs.select(["proportion", "count"], {value: "count", label: "Choose counts or proportions of isolates"})
+viewof covar = Inputs.select(["Country", "Year", "WHO_region"], {value: "Country", label: "Choose covariate"})
 
 ```
-
-
 
 ```{ojs}
 //| output: false
-filtered = transpose(data).filter(function(data) {
-  return drug.includes(data.drug) &&
-         Species.includes(data.Species);
+filtspec = transpose(summreg).filter(function(data) {
+  return specsexp.includes(data.Species) &&
+         covar.includes(data.name)
 })
 
 
-col_mets = {
-  if(metric == "resistance_status"){
-   return ["Sensitive", "Intermediate", "SDD", "Resistant", "No cutoffs"]
+doms = {
+  if(measure == "modal_mic"){
+   return [0, 256]
   } else{
-   return ["WT", "non-WT", "No ECV"]
+   return [0, 1]
   }
 }
 
-cols = {
-  if(metric == "resistance_status"){
-   return ["#4269d0","#efb118","#ff725c","#6cc5b0", "grey"]
+cscale = {
+  if(measure == "modal_mic"){
+   return "symlog"
   } else{
-   return ["#4269d0","#efb118", "grey"]
+   return "linear"
   }
 }
 
-fctvals = {
-  if(valuetype == "proportion"){
-   return "proportion-facet"
-  } else{
-   return "count"
-  }
-}
+
 ```
 
-## plots {width = 40%}
+## Plots
 
 ```{ojs}
-Plot.barY(
-  filtered,
-  Plot.groupX(
-    { y: valuetype }, 
-    { x: "mic", 
-      fill: metric, 
-      tip: true
+Plot.plot({
+  style: {fontSize: "16px"},
+  padding: 0,
+  marginLeft: 200,
+  marginTop: 200,
+  marginRight: 100,
+  grid: true,
+  x: {axis: "top", label: "", tickRotate: -90, lineWidth: 8},
+  y: {label: ""},
+  color: {type: cscale, scheme: "BuRd", domain: doms},
+  marks: [
+    Plot.cell(filtspec, {x: "drug", y: "value", fill: measure, inset: 1, tip: true})
+  ]
 })
-).plot({ color: { legend: true, 
-  domain: col_mets,
-  range: cols},
-  height: 600})
-```
-
-## By categories {.flow}
-
-```{ojs}
-//| title: Explore a category
-
-viewof facet = Inputs.select(["Age_Group", "Year", "WHO_region"], {value: "Age_Group", label: "Look across covariates:"})
-
-Plot.barY(
-  filtered,
-  Plot.groupX({ y: fctvals }, { x: "mic", fill: metric, fy: facet, tip: true})
-).plot({ color: { legend: true, 
-  domain: col_mets,
-  range: cols},
-  height: 800})
 
 ```
