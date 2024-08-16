@@ -58,6 +58,21 @@ species_by_drug <-
             prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)), 
             prop_resistant = sum(resistance_status %in% "Resistant") / sum(!is.na(resistance_status)))
 
+multiple_modes <- 
+  vivli_select %>%
+  filter(!is.na(mic)) %>%
+  group_by(drug, Species) %>%
+  count(mic) %>%
+  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
+  mutate(prop_tested = n/n_tested) %>%
+  select(-n_tested) %>%
+  slice_max(n) %>%
+  ungroup() %>%  
+  mutate(nmodes = n(), .by = c(Species, drug)) %>%
+  filter(nmodes > 1)
+
+write_csv(multiple_modes, "output/multiple_modal_mics.csv")
+
 modal_mics <- 
   vivli_select %>%
   filter(!is.na(mic)) %>%
@@ -67,6 +82,7 @@ modal_mics <-
   mutate(prop_tested = n/n_tested) %>%
   select(-n_tested) %>%
   slice_max(tibble(n, mic))
+
 
 species_by_drug <- 
   species_by_drug %>%
