@@ -863,7 +863,7 @@ Candida tropicalis,Voriconazole,0.015,Sensitive,WT,645,Sensitive: ≤ 0.12 <br>I
 Candida tropicalis,Voriconazole,0.03,Sensitive,WT,572,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
 Candida tropicalis,Voriconazole,0.06,Sensitive,WT,160,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
 Candida tropicalis,Voriconazole,0.12,Sensitive,WT,45,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
-Candida tropicalis,Voriconazole,0.25,NA,non-WT,23,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+Candida tropicalis,Voriconazole,0.25,Intermediate,non-WT,23,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
 Candida tropicalis,Voriconazole,0.5,Intermediate,non-WT,6,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
 Candida tropicalis,Voriconazole,1,Resistant,non-WT,12,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
 Candida tropicalis,Voriconazole,2,Resistant,non-WT,17,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
