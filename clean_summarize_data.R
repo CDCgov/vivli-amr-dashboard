@@ -40,10 +40,13 @@ vivli_long <-
     !is.na(SDD_upper) & mic < Resistance_lower & mic >= SDD_upper ~ "SDD", 
     !is.na(Intermediate_upper) & !is.na(SDD_upper) & mic < SDD_upper & mic >= Intermediate_upper ~ "Intermediate", 
     !is.na(Intermediate_upper) & is.na(SDD_upper) & mic < Resistance_lower & mic >= Intermediate_upper ~ "Intermediate", 
-    !is.na(Sensitive) & mic <= Sensitive_upper ~ "Sensitive", 
+    !is.na(Sensitive_upper) & mic <= Sensitive_upper ~ "Sensitive", 
     TRUE ~ NA_character_),
     ecv_status = ifelse(mic <= `_ECV`, "WT", "non-WT")) %>%
-  select(-any_of(colnames(ecvs_clsi)[colnames(ecvs_clsi) != "Species"]))
+  select(-any_of(colnames(ecvs_clsi)[colnames(ecvs_clsi) != "Species"])) 
+
+vivli_long %>%
+  summarize(n= n(), .by = c(mic, Species, drug, resistance_status, ecv_status))
 
 vivli_select <-
   vivli_long %>%
@@ -104,6 +107,14 @@ species_by_drug <-
   species_by_drug %>%
   left_join(cutoffs_formatted, by = c("Species", "drug" = "Antifungal")) 
 
+
+class_checks <-
+  vivli_long %>%
+  summarize(n= n(), .by = c(mic, Species, drug, resistance_status, ecv_status)) %>%
+  left_join(cutoffs_formatted, by = c("Species", "drug" = "Antifungal")) %>%
+  filter(!is.na(clsi) | !is.na(ecv))
+write_csv(class_checks, "double_check_mics.csv")
+
 # summary statistics by different covariates ----
 vivli_summ <- 
   vivli_select %>% 
@@ -132,6 +143,20 @@ vivli_mics <-
   select(-n_tested) %>%
   slice_max(tibble(n, mic))
 
+
+vivli_mic_dists <-
+  vivli_select %>% 
+  mutate(Year = as.character(Year)) %>%
+  pivot_longer(c(Gender, Age_Group, WHO_region, Year)) %>%
+  filter(!is.na(mic)) %>%
+  group_by(Species, drug, name, value, mic) %>%
+  summarize(n = n(), resistance_status = resistance_status[1], 
+            ecv_status = ecv_status[1]) %>%
+  group_by(Species, drug, name, value) %>%
+  mutate(prop = n/sum(n)) %>%
+  right_join(species_by_drug %>% select(drug, Species, n_tested)) %>%
+  mutate(prop_tested = n/n_tested) 
+
 vivli_summ <- 
   vivli_summ %>%
   left_join(vivli_mics %>% select(drug, Species, name, value, modal_mic = mic))
@@ -142,3 +167,4 @@ readr::write_csv(vivli_summ, 'data/vivli_summ.csv')
 readr::write_csv(vivli_select, 'data/vivli_select.csv')
 readr::write_csv(species_by_drug, 'data/species_by_drug.csv')
 readr::write_csv(cutoffs_formatted, 'data/cutoffs_formatted.csv')
+readr::write_csv(vivli_mic_dists, 'data/vivli_mic_dists.csv')
