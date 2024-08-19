@@ -110,10 +110,11 @@ species_by_drug <-
 
 class_checks <-
   vivli_long %>%
-  summarize(n= n(), .by = c(mic, Species, drug, resistance_status, ecv_status)) %>%
+  summarize(n= n(), .by = c(Species, drug, mic, resistance_status, ecv_status)) %>%
   left_join(cutoffs_formatted, by = c("Species", "drug" = "Antifungal")) %>%
-  filter(!is.na(clsi) | !is.na(ecv))
-write_csv(class_checks, "double_check_mics.csv")
+  filter(!is.na(clsi) | !is.na(ecv)) %>%
+  arrange(Species, drug, mic)
+write_csv(class_checks, "output/double_check_mics.csv")
 
 # summary statistics by different covariates ----
 vivli_summ <- 
