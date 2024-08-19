@@ -1,0 +1,1034 @@
+mic,Species,drug,resistance_status,ecv_status,n,clsi,ecv
+0.5,Candida albicans,Amphotericin B,NA,WT,3845,NA,2
+0.03,Candida albicans,Anidulafungin,Sensitive,WT,2357,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.015,Candida albicans,Caspofungin,Sensitive,NA,3357,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.06,Candida albicans,Fluconazole,Sensitive,WT,668,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.03,Candida albicans,Micafungin,Sensitive,WT,1933,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.06,Candida albicans,Posaconazole,NA,WT,1975,NA,0.06
+0.008,Candida albicans,Voriconazole,Sensitive,WT,5346,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+1,Candida albicans,Amphotericin B,NA,WT,3713,NA,2
+0.03,Candida albicans,Caspofungin,Sensitive,NA,2868,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.25,Candida albicans,Fluconazole,Sensitive,WT,2250,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.015,Candida albicans,Voriconazole,Sensitive,WT,960,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.015,Candida albicans,Anidulafungin,Sensitive,WT,2701,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.12,Candida albicans,Fluconazole,Sensitive,WT,4695,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.015,Candida albicans,Micafungin,Sensitive,WT,4133,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.03,Candida albicans,Posaconazole,NA,WT,3972,NA,0.06
+0.06,Candida albicans,Anidulafungin,Sensitive,WT,1052,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.06,Candida albicans,Caspofungin,Sensitive,NA,756,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.015,Candida albicans,Posaconazole,NA,WT,1651,NA,0.06
+0.5,Candida glabrata,Amphotericin B,NA,WT,729,NA,2
+0.06,Candida glabrata,Anidulafungin,Sensitive,WT,1753,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.03,Candida glabrata,Caspofungin,Sensitive,NA,1906,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+1,Candida glabrata,Fluconazole,SDD,WT,112,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.25,Candida glabrata,Itraconazole,NA,WT,288,NA,4
+0.03,Candida glabrata,Micafungin,Sensitive,WT,580,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.25,Candida glabrata,Posaconazole,NA,WT,833,NA,1
+0.03,Candida glabrata,Voriconazole,NA,WT,220,NA,0.25
+1,Candida tropicalis,Amphotericin B,NA,WT,1084,NA,2
+0.015,Candida tropicalis,Anidulafungin,Sensitive,WT,621,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.03,Candida tropicalis,Caspofungin,Sensitive,NA,787,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+16,Candida tropicalis,Fluconazole,Resistant,non-WT,10,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.12,Candida tropicalis,Itraconazole,NA,WT,425,NA,0.5
+0.015,Candida tropicalis,Micafungin,Sensitive,WT,567,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+0.06,Candida tropicalis,Posaconazole,NA,WT,649,NA,0.12
+0.25,Candida tropicalis,Voriconazole,NA,non-WT,23,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.06,Candida tropicalis,Anidulafungin,Sensitive,WT,229,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.06,Candida tropicalis,Caspofungin,Sensitive,NA,213,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.5,Candida tropicalis,Fluconazole,Sensitive,WT,488,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.5,Candida tropicalis,Itraconazole,NA,WT,73,NA,0.5
+0.06,Candida tropicalis,Micafungin,Sensitive,WT,249,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+0.25,Candida tropicalis,Posaconazole,NA,non-WT,82,NA,0.12
+0.03,Candida tropicalis,Voriconazole,Sensitive,WT,572,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+1,Candida glabrata,Amphotericin B,NA,WT,2525,NA,2
+0.12,Candida glabrata,Anidulafungin,Sensitive,WT,895,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.12,Candida glabrata,Caspofungin,Sensitive,NA,160,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+8,Candida glabrata,Fluconazole,SDD,WT,755,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+1,Candida glabrata,Itraconazole,NA,WT,832,NA,4
+0.015,Candida glabrata,Micafungin,Sensitive,WT,2209,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.5,Candida glabrata,Posaconazole,NA,WT,1281,NA,1
+0.25,Candida glabrata,Voriconazole,NA,WT,541,NA,0.25
+4,Candida glabrata,Fluconazole,SDD,WT,1162,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.5,Candida glabrata,Itraconazole,NA,WT,1186,NA,4
+0.12,Candida glabrata,Voriconazole,NA,WT,1050,NA,0.25
+2,Candida glabrata,Fluconazole,SDD,WT,805,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.06,Candida glabrata,Voriconazole,NA,WT,1095,NA,0.25
+16,Candida glabrata,Fluconazole,SDD,non-WT,212,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+1,Candida glabrata,Posaconazole,NA,WT,783,NA,1
+1,Candida krusei,Amphotericin B,NA,WT,411,NA,2
+0.12,Candida krusei,Anidulafungin,Sensitive,WT,48,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.25,Candida krusei,Caspofungin,Sensitive,NA,101,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+1,Candida krusei,Itraconazole,NA,WT,48,NA,1
+0.12,Candida krusei,Micafungin,Sensitive,WT,255,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.5,Candida krusei,Posaconazole,NA,WT,178,NA,0.5
+0.25,Candida krusei,Voriconazole,Sensitive,WT,317,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+0.06,Candida albicans,Micafungin,Sensitive,non-WT,98,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+2,Aspergillus fumigatus,Amphotericin B,NA,WT,749,NA,2
+0.03,Aspergillus fumigatus,Caspofungin,NA,WT,710,NA,0.5
+NA,Aspergillus fumigatus,Isavuconazole,NA,NA,729,NA,1
+0.5,Aspergillus fumigatus,Itraconazole,NA,WT,737,NA,1
+0.5,Aspergillus fumigatus,Voriconazole,Sensitive,WT,829,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.12,Candida albicans,Posaconazole,NA,non-WT,264,NA,0.06
+0.03,Candida tropicalis,Anidulafungin,Sensitive,WT,631,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.12,Candida tropicalis,Posaconazole,NA,WT,281,NA,0.12
+0.06,Candida tropicalis,Voriconazole,Sensitive,WT,160,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+2,Candida tropicalis,Amphotericin B,NA,WT,29,NA,2
+2,Candida tropicalis,Fluconazole,Sensitive,non-WT,40,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+1,Candida tropicalis,Itraconazole,NA,non-WT,18,NA,0.5
+0.5,Candida tropicalis,Posaconazole,NA,non-WT,23,NA,0.12
+2,Aspergillus niger species complex,Amphotericin B,NA,WT,8,NA,2
+0.12,Aspergillus niger species complex,Caspofungin,NA,WT,2,NA,0.25
+NA,Aspergillus niger species complex,Isavuconazole,NA,NA,104,NA,4
+1,Aspergillus niger species complex,Itraconazole,NA,WT,96,NA,4
+0.5,Aspergillus niger species complex,Posaconazole,NA,WT,167,NA,2
+0.5,Aspergillus niger species complex,Voriconazole,NA,WT,92,NA,2
+2,Candida glabrata,Posaconazole,NA,non-WT,187,NA,1
+0.5,Candida glabrata,Voriconazole,NA,non-WT,133,NA,0.25
+1,Candida lusitaniae,Amphotericin B,NA,WT,86,NA,2
+1,Candida lusitaniae,Anidulafungin,NA,WT,21,NA,1
+0.5,Candida lusitaniae,Caspofungin,NA,WT,36,NA,1
+1,Candida lusitaniae,Fluconazole,NA,WT,41,NA,1
+0.5,Candida lusitaniae,Itraconazole,NA,WT,18,NA,1
+0.12,Candida lusitaniae,Micafungin,NA,WT,136,NA,0.5
+0.25,Candida lusitaniae,Posaconazole,NA,non-WT,17,NA,0.06
+1,Candida parapsilosis,Amphotericin B,NA,WT,1498,NA,1
+2,Candida parapsilosis,Anidulafungin,Sensitive,WT,1512,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+1,Candida parapsilosis,Caspofungin,Sensitive,WT,101,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+1,Candida parapsilosis,Fluconazole,Sensitive,WT,452,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.06,Candida parapsilosis,Itraconazole,NA,WT,605,NA,0.5
+1,Candida parapsilosis,Micafungin,Sensitive,WT,1854,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.12,Candida parapsilosis,Posaconazole,NA,WT,712,NA,0.25
+0.015,Candida parapsilosis,Voriconazole,Sensitive,NA,930,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.015,Aspergillus fumigatus,Caspofungin,NA,WT,648,NA,0.5
+2,Candida glabrata,Amphotericin B,NA,WT,94,NA,2
+0.25,Candida haemulonii,Anidulafungin,NA,WT,6,NA,0.5
+2,Candida haemulonii,Fluconazole,NA,WT,4,NA,128
+0.06,Candida haemulonii,Posaconazole,NA,WT,5,NA,1
+0.06,Candida haemulonii,Voriconazole,NA,WT,4,NA,2
+0.5,Candida parapsilosis,Itraconazole,NA,WT,81,NA,0.5
+0.5,Candida parapsilosis,Posaconazole,NA,non-WT,20,NA,0.25
+0.03,Candida parapsilosis,Voriconazole,Sensitive,NA,336,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.5,Candida parapsilosis,Amphotericin B,NA,WT,1189,NA,1
+1,Candida parapsilosis,Anidulafungin,Sensitive,WT,751,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.25,Candida parapsilosis,Caspofungin,Sensitive,WT,1437,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+0.25,Candida parapsilosis,Fluconazole,Sensitive,WT,707,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.06,Candida parapsilosis,Posaconazole,NA,WT,1268,NA,0.25
+0.008,Candida parapsilosis,Voriconazole,Sensitive,NA,1057,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+32,Candida glabrata,Fluconazole,SDD,non-WT,75,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+2,Candida glabrata,Itraconazole,NA,WT,141,NA,4
+1,Candida glabrata,Voriconazole,NA,non-WT,106,NA,0.25
+0.12,Candida parapsilosis,Itraconazole,NA,WT,860,NA,0.5
+1,Candida tropicalis,Fluconazole,Sensitive,WT,111,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.25,Candida tropicalis,Itraconazole,NA,WT,187,NA,0.5
+0.12,Candida albicans,Anidulafungin,Sensitive,WT,174,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.12,Candida albicans,Caspofungin,Sensitive,NA,166,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.5,Candida albicans,Fluconazole,Sensitive,WT,374,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.25,Candida albicans,Posaconazole,NA,non-WT,29,NA,0.06
+0.03,Candida krusei,Anidulafungin,Sensitive,WT,163,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.12,Candida krusei,Caspofungin,Sensitive,NA,209,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.25,Candida krusei,Itraconazole,NA,WT,101,NA,1
+0.25,Candida krusei,Posaconazole,NA,WT,252,NA,0.5
+0.12,Candida krusei,Voriconazole,Sensitive,WT,120,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+2,Candida parapsilosis,Fluconazole,Sensitive,WT,157,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.5,Candida parapsilosis,Micafungin,Sensitive,WT,427,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.25,Candida parapsilosis,Posaconazole,NA,WT,127,NA,0.25
+0.03,Candida glabrata,Anidulafungin,Sensitive,WT,486,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.06,Candida glabrata,Caspofungin,Sensitive,NA,833,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+4,Candida albicans,Fluconazole,SDD,non-WT,10,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+1,Candida krusei,Posaconazole,NA,non-WT,11,NA,0.5
+0.5,Candida parapsilosis,Caspofungin,Sensitive,WT,912,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+2,Candida parapsilosis,Micafungin,Sensitive,WT,453,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.008,Candida glabrata,Micafungin,Sensitive,WT,483,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+4,Candida parapsilosis,Anidulafungin,Intermediate,WT,260,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.25,Candida tropicalis,Fluconazole,Sensitive,WT,686,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.06,Candida tropicalis,Itraconazole,NA,WT,487,NA,0.5
+0.008,Candida tropicalis,Voriconazole,Sensitive,WT,252,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.25,Candida parapsilosis,Itraconazole,NA,WT,482,NA,0.5
+0.5,Candida lusitaniae,Anidulafungin,NA,WT,119,NA,1
+0.25,Candida lusitaniae,Caspofungin,NA,WT,142,NA,1
+0.12,Candida lusitaniae,Posaconazole,NA,non-WT,63,NA,0.06
+0.5,Candida parapsilosis,Anidulafungin,Sensitive,WT,208,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.12,Candida parapsilosis,Caspofungin,Sensitive,WT,299,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+0.5,Candida parapsilosis,Fluconazole,Sensitive,WT,1112,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.25,Candida parapsilosis,Micafungin,Sensitive,WT,31,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+1,Cryptococcus neoformans,Amphotericin B,NA,non-WT,271,NA,0.5
+4,Cryptococcus neoformans,Fluconazole,NA,WT,178,NA,8
+8,Cryptococcus neoformans,Flucytosine,NA,WT,51,NA,8
+0.12,Cryptococcus neoformans,Itraconazole,NA,WT,108,NA,0.25
+0.25,Cryptococcus neoformans,Posaconazole,NA,WT,131,NA,0.25
+0.06,Cryptococcus neoformans,Voriconazole,NA,WT,160,NA,0.25
+1,Aspergillus fumigatus,Itraconazole,NA,WT,786,NA,1
+0.25,Aspergillus fumigatus,Voriconazole,Sensitive,WT,705,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+4,Aspergillus flavus species complex,Amphotericin B,NA,WT,17,NA,4
+0.03,Aspergillus flavus species complex,Caspofungin,NA,WT,79,NA,0.5
+NA,Aspergillus flavus species complex,Isavuconazole,NA,NA,111,NA,1
+0.5,Aspergillus flavus species complex,Itraconazole,NA,WT,142,NA,1
+0.5,Aspergillus flavus species complex,Posaconazole,NA,WT,123,NA,0.5
+2,Aspergillus flavus species complex,Voriconazole,NA,WT,3,NA,2
+0.12,Candida tropicalis,Fluconazole,Sensitive,WT,326,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.015,Candida tropicalis,Itraconazole,NA,WT,20,NA,0.5
+0.03,Candida tropicalis,Micafungin,Sensitive,WT,810,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+0.015,Candida tropicalis,Posaconazole,NA,WT,110,NA,0.12
+0.03,Candida parapsilosis,Posaconazole,NA,WT,590,NA,0.25
+0.008,Candida albicans,Anidulafungin,Sensitive,WT,1581,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+64,Cryptococcus neoformans,Flucytosine,NA,non-WT,2,NA,8
+0.03,Cryptococcus neoformans,Voriconazole,NA,WT,218,NA,0.25
+8,Cryptococcus neoformans,Fluconazole,NA,WT,39,NA,8
+0.25,Cryptococcus neoformans,Itraconazole,NA,WT,127,NA,0.25
+0.5,Cryptococcus neoformans,Posaconazole,NA,non-WT,21,NA,0.25
+0.015,Candida krusei,Anidulafungin,Sensitive,WT,20,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.06,Candida krusei,Caspofungin,Sensitive,NA,188,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.12,Candida krusei,Itraconazole,NA,WT,27,NA,1
+4,Cryptococcus neoformans,Flucytosine,NA,WT,97,NA,8
+0.12,Cryptococcus neoformans,Posaconazole,NA,WT,217,NA,0.25
+0.25,Candida glabrata,Anidulafungin,Intermediate,WT,67,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.25,Candida glabrata,Caspofungin,Intermediate,NA,33,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+0.06,Candida glabrata,Micafungin,Sensitive,non-WT,44,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.25,Candida parapsilosis,Anidulafungin,Sensitive,WT,41,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.06,Candida parapsilosis,Caspofungin,Sensitive,WT,23,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+1,Trichosporon asahii,Amphotericin B,NA,WT,65,NA,1
+0.5,Trichosporon asahii,Fluconazole,NA,WT,2,NA,8
+1,Trichosporon asahii,Itraconazole,NA,WT,11,NA,1
+1,Trichosporon asahii,Posaconazole,NA,WT,12,NA,1
+0.06,Candida krusei,Anidulafungin,Sensitive,WT,278,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.5,Candida krusei,Voriconazole,Sensitive,WT,57,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+0.015,Cryptococcus neoformans,Voriconazole,NA,WT,71,NA,0.25
+0.12,Candida tropicalis,Caspofungin,Sensitive,NA,39,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+1,Candida guilliermondii,Amphotericin B,NA,WT,41,NA,2
+1,Candida guilliermondii,Anidulafungin,Sensitive,WT,15,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+0.12,Candida guilliermondii,Caspofungin,Sensitive,WT,14,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+128,Candida guilliermondii,Fluconazole,NA,non-WT,8,NA,8
+8,Candida guilliermondii,Itraconazole,NA,non-WT,1,NA,2
+0.25,Candida guilliermondii,Micafungin,Sensitive,WT,15,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+1,Candida guilliermondii,Posaconazole,NA,non-WT,19,NA,0.5
+0.03,Candida tropicalis,Itraconazole,NA,WT,168,NA,0.5
+0.03,Candida tropicalis,Posaconazole,NA,WT,595,NA,0.12
+0.015,Candida tropicalis,Voriconazole,Sensitive,WT,645,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.06,Candida parapsilosis,Voriconazole,Sensitive,NA,122,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.008,Candida albicans,Posaconazole,NA,WT,220,NA,0.06
+0.5,Candida tropicalis,Amphotericin B,NA,WT,612,NA,2
+0.008,Candida albicans,Caspofungin,Sensitive,NA,910,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.12,Candida glabrata,Itraconazole,NA,WT,28,NA,4
+0.12,Candida glabrata,Posaconazole,NA,WT,220,NA,1
+0.015,Candida glabrata,Voriconazole,NA,WT,43,NA,0.25
+0.008,Candida tropicalis,Anidulafungin,Sensitive,WT,184,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.015,Candida tropicalis,Caspofungin,Sensitive,NA,605,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+64,Candida lusitaniae,Fluconazole,NA,non-WT,5,NA,1
+2,Candida lusitaniae,Itraconazole,NA,non-WT,1,NA,1
+0.25,Candida lusitaniae,Micafungin,NA,WT,111,NA,0.5
+1,Candida lusitaniae,Posaconazole,NA,non-WT,1,NA,0.06
+2,Candida krusei,Amphotericin B,NA,WT,98,NA,2
+0.06,Candida krusei,Micafungin,Sensitive,WT,234,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+1,Candida glabrata,Anidulafungin,Resistant,non-WT,25,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+4,Candida glabrata,Caspofungin,Resistant,NA,6,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+1,Candida dubliniensis,Amphotericin B,NA,non-WT,46,NA,0.5
+0.06,Candida dubliniensis,Anidulafungin,NA,WT,137,NA,0.12
+0.25,Candida dubliniensis,Fluconazole,NA,WT,107,NA,0.5
+0.06,Candida dubliniensis,Itraconazole,NA,WT,127,NA,0.25
+0.03,Candida dubliniensis,Micafungin,NA,WT,182,NA,0.12
+0.06,Candida dubliniensis,Posaconazole,NA,WT,106,NA,0.12
+2,Cryptococcus neoformans,Flucytosine,NA,WT,40,NA,8
+0.5,Cryptococcus neoformans,Itraconazole,NA,non-WT,19,NA,0.25
+64,Candida glabrata,Fluconazole,Resistant,non-WT,125,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+16,Candida glabrata,Itraconazole,NA,non-WT,30,NA,4
+2,Candida glabrata,Voriconazole,NA,non-WT,107,NA,0.25
+0.5,Candida guilliermondii,Amphotericin B,NA,WT,63,NA,2
+0.25,Candida guilliermondii,Caspofungin,Sensitive,WT,32,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+1,Candida guilliermondii,Fluconazole,NA,WT,4,NA,8
+0.25,Candida guilliermondii,Itraconazole,NA,WT,13,NA,2
+1,Candida guilliermondii,Micafungin,Sensitive,WT,42,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+0.12,Candida guilliermondii,Posaconazole,NA,WT,17,NA,0.5
+0.5,Candida glabrata,Fluconazole,SDD,WT,24,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+2,Aspergillus flavus species complex,Amphotericin B,NA,WT,162,NA,4
+0.5,Aspergillus flavus species complex,Voriconazole,NA,WT,123,NA,2
+0.06,Aspergillus fumigatus,Caspofungin,NA,WT,159,NA,0.5
+4,Aspergillus fumigatus,Amphotericin B,NA,non-WT,15,NA,2
+0.008,Candida albicans,Micafungin,Sensitive,WT,1891,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.12,Candida parapsilosis,Voriconazole,Sensitive,NA,53,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.03,Candida dubliniensis,Anidulafungin,NA,WT,164,NA,0.12
+0.12,Candida dubliniensis,Itraconazole,NA,WT,58,NA,0.25
+0.12,Candida dubliniensis,Posaconazole,NA,WT,21,NA,0.12
+0.03,Candida parapsilosis,Itraconazole,NA,WT,106,NA,0.5
+0.06,Candida tropicalis,Fluconazole,Sensitive,WT,21,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.008,Candida tropicalis,Posaconazole,NA,WT,5,NA,0.12
+0.12,Candida albicans,Micafungin,Sensitive,non-WT,15,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+4,Candida glabrata,Itraconazole,NA,WT,58,NA,4
+0.03,Candida dubliniensis,Itraconazole,NA,WT,83,NA,0.25
+0.06,Candida dubliniensis,Micafungin,NA,WT,30,NA,0.12
+0.015,Candida glabrata,Anidulafungin,Sensitive,WT,93,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+1,Saccharomyces cerevisiae,Amphotericin B,NA,WT,40,NA,2
+0.25,Saccharomyces cerevisiae,Anidulafungin,NA,WT,20,NA,1
+0.25,Saccharomyces cerevisiae,Caspofungin,NA,WT,27,NA,2
+1,Saccharomyces cerevisiae,Fluconazole,NA,WT,17,NA,32
+0.25,Saccharomyces cerevisiae,Itraconazole,NA,WT,11,NA,2
+0.12,Saccharomyces cerevisiae,Micafungin,NA,WT,42,NA,0.5
+0.25,Saccharomyces cerevisiae,Posaconazole,NA,WT,23,NA,2
+0.03,Saccharomyces cerevisiae,Voriconazole,NA,WT,20,NA,0.5
+8,Candida glabrata,Itraconazole,NA,non-WT,27,NA,4
+4,Candida glabrata,Voriconazole,NA,non-WT,76,NA,0.25
+1,Candida albicans,Fluconazole,Sensitive,non-WT,74,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+4,Candida parapsilosis,Fluconazole,SDD,non-WT,66,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.5,Candida parapsilosis,Voriconazole,Intermediate,NA,75,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.12,Candida krusei,Posaconazole,NA,WT,57,NA,0.5
+0.06,Saccharomyces cerevisiae,Anidulafungin,NA,WT,11,NA,1
+2,Saccharomyces cerevisiae,Fluconazole,NA,WT,19,NA,32
+0.5,Saccharomyces cerevisiae,Itraconazole,NA,WT,14,NA,2
+0.5,Saccharomyces cerevisiae,Posaconazole,NA,WT,23,NA,2
+0.06,Saccharomyces cerevisiae,Voriconazole,NA,WT,23,NA,0.5
+0.5,Candida kefyr,Amphotericin B,NA,WT,25,NA,2
+0.03,Candida kefyr,Anidulafungin,NA,WT,38,NA,0.25
+0.12,Candida kefyr,Fluconazole,NA,WT,40,NA,1
+0.06,Candida kefyr,Itraconazole,NA,WT,28,NA,0.5
+0.12,Candida kefyr,Micafungin,NA,WT,7,NA,0.12
+0.06,Candida kefyr,Posaconazole,NA,WT,59,NA,0.5
+0.12,Candida tropicalis,Voriconazole,Sensitive,WT,45,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.03,Candida albicans,Voriconazole,Sensitive,WT,197,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.12,Candida parapsilosis,Fluconazole,Sensitive,WT,109,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.12,Candida tropicalis,Micafungin,Sensitive,non-WT,19,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+0.015,Aspergillus flavus species complex,Caspofungin,NA,WT,101,NA,0.5
+0.5,Cryptococcus neoformans,Amphotericin B,NA,WT,196,NA,0.5
+1,Cryptococcus neoformans,Fluconazole,NA,WT,75,NA,8
+1,Cryptococcus neoformans,Flucytosine,NA,WT,11,NA,8
+0.03,Cryptococcus neoformans,Itraconazole,NA,WT,29,NA,0.25
+0.06,Cryptococcus neoformans,Posaconazole,NA,WT,96,NA,0.25
+0.008,Cryptococcus neoformans,Voriconazole,NA,WT,11,NA,0.25
+0.12,Candida albicans,Voriconazole,Sensitive,non-WT,16,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.06,Cryptococcus neoformans,Itraconazole,NA,WT,74,NA,0.25
+8,Candida parapsilosis,Anidulafungin,Resistant,non-WT,3,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+2,Candida parapsilosis,Caspofungin,Sensitive,non-WT,7,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+NA,Cryptococcus neoformans,Flucytosine,NA,NA,279,NA,8
+0.12,Candida parapsilosis,Micafungin,Sensitive,WT,10,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+4,Candida glabrata,Posaconazole,NA,non-WT,27,NA,1
+4,Candida guilliermondii,Anidulafungin,Intermediate,WT,17,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+1,Candida guilliermondii,Caspofungin,Sensitive,WT,22,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+8,Candida guilliermondii,Fluconazole,NA,WT,8,NA,8
+2,Candida guilliermondii,Itraconazole,NA,WT,13,NA,2
+0.25,Candida albicans,Anidulafungin,Sensitive,non-WT,11,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+4,Candida tropicalis,Fluconazole,SDD,non-WT,19,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.5,Candida albicans,Caspofungin,Intermediate,NA,5,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.5,Candida albicans,Micafungin,Intermediate,non-WT,4,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.12,Candida parapsilosis,Anidulafungin,Sensitive,WT,10,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.015,Candida parapsilosis,Posaconazole,NA,WT,67,NA,0.25
+1,Aspergillus fumigatus,Amphotericin B,NA,WT,856,NA,2
+2,Aspergillus fumigatus,Itraconazole,NA,non-WT,45,NA,1
+8,Aspergillus fumigatus,Voriconazole,Resistant,non-WT,2,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.25,Candida kefyr,Fluconazole,NA,WT,51,NA,1
+0.06,Candida kefyr,Micafungin,NA,WT,68,NA,0.12
+0.5,Candida lusitaniae,Amphotericin B,NA,WT,166,NA,2
+0.12,Candida lusitaniae,Anidulafungin,NA,WT,31,NA,1
+0.12,Candida lusitaniae,Caspofungin,NA,WT,96,NA,1
+0.25,Candida lusitaniae,Fluconazole,NA,WT,106,NA,1
+0.06,Candida lusitaniae,Itraconazole,NA,WT,35,NA,1
+0.03,Candida lusitaniae,Posaconazole,NA,WT,68,NA,0.06
+2,Cryptococcus neoformans,Fluconazole,NA,WT,185,NA,8
+0.25,Candida lusitaniae,Anidulafungin,NA,WT,133,NA,1
+0.06,Candida lusitaniae,Fluconazole,NA,WT,15,NA,1
+0.5,Candida lusitaniae,Micafungin,NA,WT,17,NA,0.5
+128,Candida glabrata,Fluconazole,Resistant,non-WT,99,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.25,Candida albicans,Caspofungin,Sensitive,NA,14,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+4,Candida parapsilosis,Micafungin,Intermediate,non-WT,7,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.008,Aspergillus flavus species complex,Caspofungin,NA,WT,42,NA,0.5
+1,Aspergillus flavus species complex,Voriconazole,NA,WT,78,NA,2
+1,Candida glabrata,Caspofungin,Resistant,NA,19,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+16,Cryptococcus neoformans,Flucytosine,NA,non-WT,11,NA,8
+0.5,Candida glabrata,Caspofungin,Resistant,NA,20,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+256,Candida glabrata,Fluconazole,Resistant,non-WT,14,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+1,Candida guilliermondii,Itraconazole,NA,WT,17,NA,2
+0.12,Candida glabrata,Micafungin,Intermediate,non-WT,16,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.5,Saccharomyces cerevisiae,Anidulafungin,NA,WT,8,NA,1
+0.5,Saccharomyces cerevisiae,Caspofungin,NA,WT,6,NA,2
+4,Saccharomyces cerevisiae,Fluconazole,NA,WT,15,NA,32
+1,Saccharomyces cerevisiae,Itraconazole,NA,WT,10,NA,2
+1,Saccharomyces cerevisiae,Posaconazole,NA,WT,15,NA,2
+0.12,Saccharomyces cerevisiae,Voriconazole,NA,WT,15,NA,0.5
+1,Candida lusitaniae,Caspofungin,NA,WT,6,NA,1
+0.5,Candida lusitaniae,Fluconazole,NA,WT,83,NA,1
+2,Candida lusitaniae,Fluconazole,NA,non-WT,16,NA,1
+0.12,Saccharomyces cerevisiae,Caspofungin,NA,WT,23,NA,2
+0.25,Saccharomyces cerevisiae,Micafungin,NA,WT,20,NA,0.5
+0.5,Cryptococcus neoformans,Fluconazole,NA,WT,15,NA,8
+0.5,Cryptococcus neoformans,Flucytosine,NA,WT,6,NA,8
+0.12,Candida dubliniensis,Anidulafungin,NA,WT,56,NA,0.12
+0.03,Candida dubliniensis,Posaconazole,NA,WT,225,NA,0.12
+0.008,Aspergillus fumigatus,Caspofungin,NA,WT,121,NA,0.5
+0.5,Candida krusei,Itraconazole,NA,WT,192,NA,1
+0.06,Candida lusitaniae,Posaconazole,NA,WT,155,NA,0.06
+0.06,Candida albicans,Voriconazole,Sensitive,non-WT,33,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.25,Candida lusitaniae,Itraconazole,NA,WT,99,NA,1
+1,Candida parapsilosis,Itraconazole,NA,non-WT,12,NA,0.5
+16,Candida guilliermondii,Fluconazole,NA,non-WT,3,NA,8
+0.5,Candida guilliermondii,Micafungin,Sensitive,WT,50,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+0.008,Candida tropicalis,Itraconazole,NA,WT,2,NA,0.5
+2,Candida albicans,Amphotericin B,NA,WT,21,NA,2
+0.25,Candida glabrata,Amphotericin B,NA,WT,44,NA,2
+0.25,Candida dubliniensis,Anidulafungin,NA,non-WT,3,NA,0.12
+0.5,Candida dubliniensis,Itraconazole,NA,non-WT,5,NA,0.25
+0.25,Candida dubliniensis,Micafungin,NA,non-WT,1,NA,0.12
+0.5,Candida glabrata,Anidulafungin,Resistant,non-WT,13,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.03,Aspergillus niger species complex,Caspofungin,NA,WT,75,NA,0.25
+1,Candida pelliculosa,Amphotericin B,NA,WT,16,NA,1
+2,Candida pelliculosa,Fluconazole,NA,WT,22,NA,8
+0.12,Candida pelliculosa,Itraconazole,NA,WT,7,NA,1
+0.03,Candida pelliculosa,Micafungin,NA,WT,25,NA,0.12
+0.25,Candida pelliculosa,Posaconazole,NA,WT,10,NA,2
+0.12,Candida pelliculosa,Voriconazole,NA,WT,22,NA,0.25
+0.12,Candida dubliniensis,Fluconazole,NA,WT,221,NA,0.5
+0.015,Candida dubliniensis,Micafungin,NA,WT,158,NA,0.12
+32,Candida tropicalis,Fluconazole,Resistant,non-WT,13,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.5,Candida dubliniensis,Amphotericin B,NA,WT,172,NA,0.5
+0.06,Candida dubliniensis,Fluconazole,NA,WT,60,NA,0.5
+0.5,Candida krusei,Caspofungin,Intermediate,NA,6,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.008,Candida dubliniensis,Itraconazole,NA,WT,3,NA,0.25
+0.008,Candida dubliniensis,Posaconazole,NA,WT,5,NA,0.12
+8,Candida glabrata,Voriconazole,NA,non-WT,8,NA,0.25
+32,Candida dubliniensis,Fluconazole,NA,non-WT,1,NA,0.5
+0.5,Candida dubliniensis,Posaconazole,NA,non-WT,1,NA,0.12
+0.12,Candida lusitaniae,Fluconazole,NA,WT,44,NA,1
+0.12,Candida lusitaniae,Itraconazole,NA,WT,91,NA,1
+1,Rhodotorula mucilaginosa,Amphotericin B,NA,WT,19,NA,2
+2,Rhodotorula mucilaginosa,Itraconazole,NA,WT,8,NA,4
+2,Rhodotorula mucilaginosa,Posaconazole,NA,WT,10,NA,4
+0.5,Rhodotorula mucilaginosa,Voriconazole,NA,WT,8,NA,16
+4,Rhodotorula mucilaginosa,Voriconazole,NA,WT,10,NA,16
+16,Candida parapsilosis,Fluconazole,Resistant,non-WT,24,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+2,Trichosporon asahii,Amphotericin B,NA,non-WT,6,NA,1
+2,Trichosporon asahii,Fluconazole,NA,WT,22,NA,8
+0.5,Trichosporon asahii,Itraconazole,NA,WT,25,NA,1
+0.5,Trichosporon asahii,Posaconazole,NA,WT,24,NA,1
+256,Candida albicans,Fluconazole,Resistant,non-WT,8,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+16,Candida albicans,Posaconazole,NA,non-WT,7,NA,0.06
+16,Candida albicans,Voriconazole,Resistant,non-WT,7,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.03,Candida krusei,Caspofungin,Sensitive,NA,7,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+1,Candida lusitaniae,Micafungin,NA,non-WT,5,NA,0.5
+1,Cryptococcus neoformans,Itraconazole,NA,non-WT,2,NA,0.25
+1,Cryptococcus neoformans,Posaconazole,NA,non-WT,2,NA,0.25
+2,Candida krusei,Itraconazole,NA,non-WT,2,NA,1
+2,Candida krusei,Posaconazole,NA,non-WT,3,NA,0.5
+1,Candida krusei,Voriconazole,Intermediate,non-WT,10,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+0.12,Candida kefyr,Itraconazole,NA,WT,43,NA,0.5
+0.12,Candida kefyr,Posaconazole,NA,WT,51,NA,0.5
+0.015,Candida dubliniensis,Itraconazole,NA,WT,14,NA,0.25
+0.25,Candida albicans,Amphotericin B,NA,WT,568,NA,2
+4,Trichosporon asahii,Fluconazole,NA,WT,25,NA,8
+0.12,Candida dubliniensis,Micafungin,NA,WT,7,NA,0.12
+1,Candida lusitaniae,Itraconazole,NA,WT,6,NA,1
+0.5,Candida lusitaniae,Posaconazole,NA,non-WT,3,NA,0.06
+2,Aspergillus terreus species complex,Amphotericin B,NA,WT,64,NA,4
+0.03,Aspergillus terreus species complex,Caspofungin,NA,WT,28,NA,0.12
+NA,Aspergillus terreus species complex,Isavuconazole,NA,NA,37,NA,1
+0.5,Aspergillus terreus species complex,Itraconazole,NA,WT,59,NA,2
+0.25,Aspergillus terreus species complex,Posaconazole,NA,WT,63,NA,1
+0.5,Aspergillus terreus species complex,Voriconazole,NA,WT,48,NA,2
+1,Aspergillus niger species complex,Amphotericin B,NA,WT,107,NA,2
+0.015,Candida glabrata,Caspofungin,Sensitive,NA,376,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+0.25,Candida kefyr,Anidulafungin,NA,WT,4,NA,0.25
+0.25,Candida kefyr,Itraconazole,NA,WT,30,NA,0.5
+0.5,Candida kefyr,Micafungin,NA,non-WT,2,NA,0.12
+0.25,Candida kefyr,Posaconazole,NA,WT,19,NA,0.5
+16,Cryptococcus neoformans,Fluconazole,NA,non-WT,3,NA,8
+0.25,Trichosporon asahii,Posaconazole,NA,WT,28,NA,1
+0.5,Candida krusei,Amphotericin B,NA,WT,8,NA,2
+1,Rhodotorula mucilaginosa,Itraconazole,NA,WT,11,NA,4
+1,Rhodotorula mucilaginosa,Posaconazole,NA,WT,17,NA,4
+0.25,Trichosporon asahii,Itraconazole,NA,WT,15,NA,1
+0.12,Trichosporon asahii,Posaconazole,NA,WT,8,NA,1
+2,Candida guilliermondii,Caspofungin,Sensitive,WT,3,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+2,Candida guilliermondii,Fluconazole,NA,WT,50,NA,8
+8,Candida guilliermondii,Micafungin,Resistant,non-WT,1,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+32,Candida parapsilosis,Fluconazole,Resistant,non-WT,67,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.25,Candida parapsilosis,Voriconazole,NA,NA,59,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+256,Candida parapsilosis,Fluconazole,Resistant,non-WT,1,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+4,Candida parapsilosis,Voriconazole,Resistant,NA,2,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.008,Candida tropicalis,Micafungin,Sensitive,WT,96,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+NA,Aspergillus niger species complex,Itraconazole,NA,NA,2,NA,4
+NA,Aspergillus niger species complex,Posaconazole,NA,NA,1,NA,2
+NA,Aspergillus niger species complex,Voriconazole,NA,NA,1,NA,2
+NA,Aspergillus fumigatus,Itraconazole,NA,NA,1,NA,1
+NA,Aspergillus fumigatus,Voriconazole,NA,NA,1,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+2,Aspergillus niger species complex,Itraconazole,NA,WT,93,NA,4
+1,Aspergillus niger species complex,Voriconazole,NA,WT,98,NA,2
+0.03,Candida lusitaniae,Itraconazole,NA,WT,1,NA,1
+32,Candida lusitaniae,Fluconazole,NA,non-WT,2,NA,1
+0.015,Candida dubliniensis,Anidulafungin,NA,WT,35,NA,0.12
+0.06,Candida kefyr,Fluconazole,NA,WT,4,NA,1
+0.015,Candida kefyr,Itraconazole,NA,WT,1,NA,0.5
+0.03,Candida kefyr,Posaconazole,NA,WT,11,NA,0.5
+0.06,Candida lusitaniae,Anidulafungin,NA,WT,10,NA,1
+0.06,Candida lusitaniae,Caspofungin,NA,WT,28,NA,1
+0.06,Candida parapsilosis,Fluconazole,Sensitive,WT,6,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.25,Candida albicans,Micafungin,Sensitive,non-WT,4,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+2,Candida guilliermondii,Anidulafungin,Sensitive,WT,76,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+0.5,Candida guilliermondii,Caspofungin,Sensitive,WT,39,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+4,Candida guilliermondii,Fluconazole,NA,WT,28,NA,8
+0.5,Candida guilliermondii,Itraconazole,NA,WT,41,NA,2
+0.25,Candida guilliermondii,Posaconazole,NA,WT,56,NA,0.5
+1,Candida kefyr,Amphotericin B,NA,WT,110,NA,2
+0.03,Candida kefyr,Micafungin,NA,WT,67,NA,0.12
+0.5,Aspergillus terreus species complex,Posaconazole,NA,WT,17,NA,1
+2,Candida guilliermondii,Micafungin,Sensitive,WT,5,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+0.5,Candida guilliermondii,Posaconazole,NA,WT,23,NA,0.5
+0.06,Candida krusei,Voriconazole,Sensitive,WT,10,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+0.03,Candida parapsilosis,Caspofungin,Sensitive,WT,10,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+0.5,Candida glabrata,Micafungin,Resistant,non-WT,17,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.25,Candida dubliniensis,Amphotericin B,NA,WT,151,NA,0.5
+0.015,Candida krusei,Micafungin,Sensitive,WT,5,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.008,Candida lusitaniae,Itraconazole,NA,WT,1,NA,1
+0.008,Candida lusitaniae,Posaconazole,NA,WT,2,NA,0.06
+2,Candida lusitaniae,Amphotericin B,NA,WT,1,NA,2
+0.03,Candida kefyr,Itraconazole,NA,WT,5,NA,0.5
+0.015,Aspergillus terreus species complex,Caspofungin,NA,WT,37,NA,0.12
+0.25,Aspergillus terreus species complex,Itraconazole,NA,WT,18,NA,2
+0.25,Aspergillus terreus species complex,Voriconazole,NA,WT,33,NA,2
+0.5,Candida albicans,Anidulafungin,Intermediate,non-WT,6,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+2,Candida lusitaniae,Micafungin,NA,non-WT,2,NA,0.5
+8,Candida guilliermondii,Anidulafungin,Resistant,WT,1,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+4,Candida lusitaniae,Fluconazole,NA,non-WT,3,NA,1
+0.25,Candida krusei,Anidulafungin,Sensitive,WT,3,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.5,Candida krusei,Micafungin,Intermediate,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+NA,Candida albicans,Amphotericin B,NA,NA,3,NA,2
+0.25,Candida tropicalis,Micafungin,Sensitive,non-WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+2,Candida krusei,Voriconazole,Resistant,non-WT,1,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+0.25,Candida lusitaniae,Amphotericin B,NA,WT,63,NA,2
+0.03,Candida lusitaniae,Caspofungin,NA,WT,8,NA,1
+0.03,Candida lusitaniae,Micafungin,NA,WT,8,NA,0.5
+0.015,Candida lusitaniae,Posaconazole,NA,WT,9,NA,0.06
+0.015,Candida dubliniensis,Posaconazole,NA,WT,42,NA,0.12
+16,Candida glabrata,Posaconazole,NA,non-WT,30,NA,1
+1,Candida tropicalis,Posaconazole,NA,non-WT,3,NA,0.12
+2,Candida tropicalis,Voriconazole,Resistant,non-WT,17,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+32,Candida guilliermondii,Fluconazole,NA,non-WT,3,NA,8
+0.015,Aspergillus niger species complex,Caspofungin,NA,WT,113,NA,0.25
+1,Aspergillus niger species complex,Posaconazole,NA,WT,49,NA,2
+1,Aspergillus flavus species complex,Itraconazole,NA,WT,65,NA,1
+1,Aspergillus flavus species complex,Posaconazole,NA,non-WT,4,NA,0.5
+0.5,Candida pelliculosa,Amphotericin B,NA,WT,25,NA,1
+1,Candida pelliculosa,Fluconazole,NA,WT,3,NA,8
+0.12,Candida pelliculosa,Posaconazole,NA,WT,7,NA,2
+0.015,Candida pelliculosa,Voriconazole,NA,WT,1,NA,0.25
+8,Candida parapsilosis,Fluconazole,Resistant,non-WT,32,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.25,Candida parapsilosis,Amphotericin B,NA,WT,75,NA,1
+4,Aspergillus terreus species complex,Amphotericin B,NA,WT,11,NA,4
+1,Aspergillus terreus species complex,Itraconazole,NA,WT,15,NA,2
+2,Candida kefyr,Amphotericin B,NA,WT,10,NA,2
+0.06,Candida kefyr,Anidulafungin,NA,WT,62,NA,0.25
+0.5,Candida kefyr,Fluconazole,NA,WT,44,NA,1
+0.12,Cryptococcus neoformans,Voriconazole,NA,WT,30,NA,0.25
+2,Candida parapsilosis,Amphotericin B,NA,non-WT,29,NA,1
+2,Candida albicans,Fluconazole,Sensitive,non-WT,21,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.5,Saccharomyces cerevisiae,Micafungin,NA,WT,4,NA,0.5
+0.008,Candida glabrata,Voriconazole,NA,WT,15,NA,0.25
+0.06,Candida lusitaniae,Micafungin,NA,WT,37,NA,0.5
+0.03,Cryptococcus neoformans,Posaconazole,NA,WT,25,NA,0.25
+0.12,Candida tropicalis,Anidulafungin,Sensitive,WT,66,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+2,Candida lusitaniae,Anidulafungin,NA,non-WT,2,NA,1
+0.008,Candida parapsilosis,Itraconazole,NA,WT,1,NA,0.5
+0.12,Candida guilliermondii,Amphotericin B,NA,WT,1,NA,2
+0.06,Candida guilliermondii,Caspofungin,Sensitive,WT,7,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+64,Candida guilliermondii,Fluconazole,NA,non-WT,6,NA,8
+0.25,Aspergillus terreus species complex,Caspofungin,NA,non-WT,1,NA,0.12
+0.008,Candida dubliniensis,Micafungin,NA,WT,23,NA,0.12
+1,Candida haemulonii,Anidulafungin,NA,non-WT,1,NA,0.5
+4,Candida haemulonii,Fluconazole,NA,WT,6,NA,128
+0.25,Candida haemulonii,Posaconazole,NA,WT,3,NA,1
+0.12,Candida haemulonii,Voriconazole,NA,WT,4,NA,2
+0.008,Candida tropicalis,Caspofungin,Sensitive,NA,89,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.25,Candida tropicalis,Amphotericin B,NA,WT,24,NA,2
+0.03,Candida lusitaniae,Anidulafungin,NA,WT,2,NA,1
+0.015,Candida lusitaniae,Caspofungin,NA,WT,1,NA,1
+128,Trichosporon asahii,Fluconazole,NA,non-WT,5,NA,8
+1,Aspergillus fumigatus,Voriconazole,Intermediate,WT,73,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.25,Candida tropicalis,Caspofungin,Sensitive,NA,7,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.12,Candida glabrata,Amphotericin B,NA,WT,3,NA,2
+0.008,Candida krusei,Anidulafungin,Sensitive,WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.008,Candida krusei,Caspofungin,Sensitive,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.008,Candida krusei,Micafungin,Sensitive,WT,3,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.5,Saccharomyces cerevisiae,Amphotericin B,NA,WT,27,NA,2
+0.12,Saccharomyces cerevisiae,Anidulafungin,NA,WT,22,NA,1
+0.06,Candida guilliermondii,Micafungin,Sensitive,WT,2,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+2,Aspergillus niger species complex,Voriconazole,NA,WT,35,NA,2
+0.25,Candida tropicalis,Anidulafungin,Sensitive,non-WT,5,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.06,Aspergillus niger species complex,Caspofungin,NA,WT,17,NA,0.25
+0.25,Cryptococcus neoformans,Amphotericin B,NA,WT,22,NA,0.5
+0.25,Aspergillus flavus species complex,Posaconazole,NA,WT,98,NA,0.5
+64,Candida parapsilosis,Fluconazole,Resistant,non-WT,51,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+0.015,Cryptococcus neoformans,Posaconazole,NA,WT,5,NA,0.25
+0.12,Trichosporon asahii,Itraconazole,NA,WT,2,NA,1
+0.008,Candida dubliniensis,Anidulafungin,NA,WT,5,NA,0.12
+4,Candida glabrata,Anidulafungin,Resistant,non-WT,8,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+16,Candida glabrata,Caspofungin,Resistant,NA,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+2,Candida glabrata,Micafungin,Resistant,non-WT,5,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.015,Candida lusitaniae,Micafungin,NA,WT,2,NA,0.5
+0.12,Candida kefyr,Anidulafungin,NA,WT,37,NA,0.25
+0.015,Candida kefyr,Posaconazole,NA,WT,6,NA,0.5
+1,Candida albicans,Caspofungin,Resistant,NA,7,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+1,Candida albicans,Micafungin,Resistant,non-WT,6,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.25,Candida guilliermondii,Amphotericin B,NA,WT,10,NA,2
+0.25,Candida guilliermondii,Anidulafungin,Sensitive,WT,2,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+0.12,Candida guilliermondii,Micafungin,Sensitive,WT,2,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,2
+0.03,Candida parapsilosis,Anidulafungin,Sensitive,WT,3,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.06,Candida parapsilosis,Micafungin,Sensitive,WT,2,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+2,Candida glabrata,Anidulafungin,Resistant,non-WT,25,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+1,Candida glabrata,Micafungin,Resistant,non-WT,17,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.015,Candida parapsilosis,Itraconazole,NA,WT,19,NA,0.5
+0.12,Candida dubliniensis,Amphotericin B,NA,WT,28,NA,0.5
+0.25,Candida glabrata,Micafungin,Resistant,non-WT,15,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.06,Candida krusei,Itraconazole,NA,WT,6,NA,1
+1,Candida tropicalis,Voriconazole,Resistant,non-WT,12,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+2,Candida albicans,Caspofungin,Resistant,NA,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+8,Candida tropicalis,Fluconazole,Resistant,non-WT,7,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+0.5,Candida tropicalis,Voriconazole,Intermediate,non-WT,6,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.5,Rhodotorula mucilaginosa,Amphotericin B,NA,WT,17,NA,2
+8,Rhodotorula mucilaginosa,Itraconazole,NA,non-WT,2,NA,4
+4,Rhodotorula mucilaginosa,Posaconazole,NA,WT,1,NA,4
+0.12,Candida glabrata,Fluconazole,SDD,WT,4,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.06,Candida glabrata,Itraconazole,NA,WT,7,NA,4
+0.06,Candida glabrata,Posaconazole,NA,WT,17,NA,1
+0.06,Candida krusei,Posaconazole,NA,WT,11,NA,0.5
+0.5,Candida orthopsilosis,Amphotericin B,NA,WT,82,NA,2
+0.5,Candida orthopsilosis,Anidulafungin,NA,WT,55,NA,2
+0.25,Candida orthopsilosis,Caspofungin,NA,WT,28,NA,1
+0.5,Candida orthopsilosis,Fluconazole,NA,WT,51,NA,2
+0.12,Candida orthopsilosis,Itraconazole,NA,WT,35,NA,0.5
+0.5,Candida orthopsilosis,Micafungin,NA,WT,52,NA,1
+0.06,Candida orthopsilosis,Posaconazole,NA,WT,52,NA,0.25
+0.015,Candida orthopsilosis,Voriconazole,NA,WT,48,NA,0.12
+8,Saccharomyces cerevisiae,Fluconazole,NA,WT,11,NA,32
+2,Candida dubliniensis,Anidulafungin,NA,non-WT,1,NA,0.12
+1,Candida dubliniensis,Micafungin,NA,non-WT,2,NA,0.12
+16,Candida albicans,Fluconazole,Resistant,non-WT,6,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.5,Candida albicans,Posaconazole,NA,non-WT,5,NA,0.06
+0.5,Candida albicans,Voriconazole,Intermediate,non-WT,6,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+1,Trichosporon asahii,Fluconazole,NA,WT,3,NA,8
+NA,Trichosporon asahii,Itraconazole,NA,NA,15,NA,1
+0.06,Trichosporon asahii,Posaconazole,NA,WT,3,NA,1
+1,Aspergillus terreus species complex,Posaconazole,NA,WT,1,NA,1
+2,Aspergillus terreus species complex,Voriconazole,NA,WT,1,NA,2
+0.12,Aspergillus fumigatus,Caspofungin,NA,WT,12,NA,0.5
+0.25,Aspergillus fumigatus,Itraconazole,NA,WT,69,NA,1
+0.12,Aspergillus fumigatus,Voriconazole,Sensitive,WT,28,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.12,Candida albicans,Amphotericin B,NA,WT,8,NA,2
+2,Candida glabrata,Caspofungin,Resistant,NA,9,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+2,Rhodotorula mucilaginosa,Voriconazole,NA,WT,8,NA,16
+0.25,Aspergillus flavus species complex,Voriconazole,NA,WT,28,NA,2
+4,Aspergillus niger species complex,Itraconazole,NA,WT,22,NA,4
+8,Candida albicans,Fluconazole,Resistant,non-WT,8,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+NA,Candida glabrata,Micafungin,NA,NA,1,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.25,Cryptococcus neoformans,Voriconazole,NA,WT,5,NA,0.25
+0.5,Cryptococcus gattii species complex,Amphotericin B,NA,WT,7,NA,0.5
+4,Cryptococcus gattii species complex,Fluconazole,NA,WT,8,NA,16
+1,Cryptococcus gattii species complex,Flucytosine,NA,WT,2,NA,4
+0.25,Cryptococcus gattii species complex,Itraconazole,NA,WT,8,NA,0.5
+0.06,Cryptococcus gattii species complex,Voriconazole,NA,WT,6,NA,0.5
+1,Cryptococcus neoformans,Voriconazole,NA,non-WT,1,NA,0.25
+0.5,Candida pelliculosa,Fluconazole,NA,WT,1,NA,8
+0.06,Candida pelliculosa,Itraconazole,NA,WT,2,NA,1
+0.06,Candida pelliculosa,Micafungin,NA,WT,8,NA,0.12
+0.03,Candida pelliculosa,Voriconazole,NA,WT,2,NA,0.25
+64,Candida tropicalis,Fluconazole,Resistant,non-WT,18,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+1,Saccharomyces cerevisiae,Anidulafungin,NA,WT,6,NA,1
+2,Saccharomyces cerevisiae,Itraconazole,NA,WT,3,NA,2
+0.25,Saccharomyces cerevisiae,Voriconazole,NA,WT,7,NA,0.5
+16,Trichosporon asahii,Fluconazole,NA,non-WT,7,NA,8
+8,Trichosporon asahii,Fluconazole,NA,WT,7,NA,8
+0.5,Trichosporon asahii,Amphotericin B,NA,WT,7,NA,1
+0.5,Candida dubliniensis,Fluconazole,NA,WT,6,NA,0.5
+0.25,Candida dubliniensis,Itraconazole,NA,WT,14,NA,0.25
+2,Candida lusitaniae,Caspofungin,NA,non-WT,1,NA,1
+0.12,Candida guilliermondii,Itraconazole,NA,WT,1,NA,2
+1,Candida krusei,Anidulafungin,Resistant,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+1,Candida krusei,Caspofungin,Resistant,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+4,Candida krusei,Itraconazole,NA,non-WT,1,NA,1
+4,Candida krusei,Voriconazole,Resistant,non-WT,2,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,0.5
+1,Candida orthopsilosis,Amphotericin B,NA,WT,31,NA,2
+0.25,Candida orthopsilosis,Anidulafungin,NA,WT,21,NA,2
+0.06,Candida orthopsilosis,Caspofungin,NA,WT,29,NA,1
+0.25,Candida orthopsilosis,Micafungin,NA,WT,59,NA,1
+0.12,Candida orthopsilosis,Caspofungin,NA,WT,60,NA,1
+2,Candida orthopsilosis,Fluconazole,NA,WT,9,NA,2
+0.25,Candida orthopsilosis,Itraconazole,NA,WT,28,NA,0.5
+0.12,Candida orthopsilosis,Posaconazole,NA,WT,43,NA,0.25
+0.06,Candida orthopsilosis,Voriconazole,NA,WT,13,NA,0.12
+1,Cryptococcus gattii species complex,Amphotericin B,NA,non-WT,8,NA,0.5
+1,Cryptococcus gattii species complex,Fluconazole,NA,WT,1,NA,16
+0.015,Cryptococcus gattii species complex,Voriconazole,NA,WT,1,NA,0.5
+1,Rhodotorula mucilaginosa,Voriconazole,NA,WT,8,NA,16
+0.25,Candida glabrata,Fluconazole,SDD,WT,7,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.03,Candida glabrata,Posaconazole,NA,WT,7,NA,1
+0.25,Aspergillus fumigatus,Caspofungin,NA,WT,1,NA,0.5
+16,Aspergillus fumigatus,Itraconazole,NA,non-WT,10,NA,1
+4,Aspergillus fumigatus,Voriconazole,Resistant,non-WT,4,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.25,Aspergillus niger species complex,Itraconazole,NA,WT,9,NA,4
+0.12,Aspergillus niger species complex,Posaconazole,NA,WT,8,NA,2
+0.06,Aspergillus niger species complex,Voriconazole,NA,WT,4,NA,2
+0.06,Aspergillus flavus species complex,Caspofungin,NA,WT,6,NA,0.5
+0.5,Aspergillus niger species complex,Amphotericin B,NA,WT,101,NA,2
+0.25,Candida pelliculosa,Itraconazole,NA,WT,13,NA,1
+8,Candida pelliculosa,Fluconazole,NA,WT,5,NA,8
+0.015,Candida pelliculosa,Micafungin,NA,WT,5,NA,0.12
+0.25,Candida pelliculosa,Voriconazole,NA,WT,5,NA,0.25
+0.5,Candida pelliculosa,Itraconazole,NA,WT,10,NA,1
+0.25,Candida pelliculosa,Micafungin,NA,non-WT,2,NA,0.12
+0.5,Candida pelliculosa,Posaconazole,NA,WT,21,NA,2
+0.06,Candida pelliculosa,Voriconazole,NA,WT,11,NA,0.25
+0.5,Candida guilliermondii,Anidulafungin,Sensitive,WT,6,Sensitive: ≤ 2 <br>Intermediate: 4 <br>Resistant: ≥ 8,8
+0.06,Candida parapsilosis,Anidulafungin,Sensitive,WT,3,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.015,Candida parapsilosis,Micafungin,Sensitive,WT,6,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+1,Candida parapsilosis,Posaconazole,NA,non-WT,2,NA,0.25
+4,Candida pelliculosa,Fluconazole,NA,WT,11,NA,8
+4,Candida tropicalis,Voriconazole,Resistant,non-WT,8,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+1,Aspergillus flavus species complex,Amphotericin B,NA,WT,55,NA,4
+1,Candida tropicalis,Anidulafungin,Resistant,non-WT,4,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.5,Candida tropicalis,Caspofungin,Intermediate,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.5,Candida tropicalis,Micafungin,Intermediate,non-WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+0.5,Rhodotorula mucilaginosa,Itraconazole,NA,WT,6,NA,4
+0.5,Rhodotorula mucilaginosa,Posaconazole,NA,WT,9,NA,4
+0.12,Rhodotorula mucilaginosa,Voriconazole,NA,WT,3,NA,16
+NA,Candida tropicalis,Amphotericin B,NA,NA,1,NA,2
+0.25,Cryptococcus gattii species complex,Fluconazole,NA,WT,1,NA,16
+2,Cryptococcus gattii species complex,Flucytosine,NA,WT,2,NA,4
+NA,Cryptococcus gattii species complex,Itraconazole,NA,NA,4,NA,0.5
+0.008,Cryptococcus gattii species complex,Voriconazole,NA,WT,1,NA,0.5
+8,Cryptococcus gattii species complex,Flucytosine,NA,non-WT,1,NA,4
+NA,Cryptococcus neoformans,Amphotericin B,NA,NA,2,NA,0.5
+1,Candida orthopsilosis,Anidulafungin,NA,WT,40,NA,2
+1,Candida orthopsilosis,Fluconazole,NA,WT,27,NA,2
+0.03,Candida orthopsilosis,Voriconazole,NA,WT,28,NA,0.12
+4,Aspergillus niger species complex,Isavuconazole,NA,WT,30,NA,4
+1,Aspergillus fumigatus,Isavuconazole,NA,WT,294,NA,1
+1,Candida metapsilosis,Amphotericin B,NA,WT,19,NA,1
+0.12,Candida metapsilosis,Anidulafungin,NA,WT,18,NA,0.5
+0.06,Candida metapsilosis,Caspofungin,NA,WT,31,NA,0.25
+1,Candida metapsilosis,Fluconazole,NA,WT,24,NA,4
+0.25,Candida metapsilosis,Itraconazole,NA,WT,10,NA,1
+0.25,Candida metapsilosis,Micafungin,NA,WT,29,NA,1
+0.06,Candida metapsilosis,Posaconazole,NA,WT,31,NA,0.25
+0.03,Candida metapsilosis,Voriconazole,NA,WT,18,NA,0.06
+4,Candida orthopsilosis,Fluconazole,NA,non-WT,7,NA,2
+0.5,Candida orthopsilosis,Itraconazole,NA,WT,5,NA,0.5
+0.25,Candida orthopsilosis,Posaconazole,NA,WT,13,NA,0.25
+0.12,Candida orthopsilosis,Voriconazole,NA,WT,7,NA,0.12
+0.25,Candida metapsilosis,Anidulafungin,NA,WT,27,NA,0.5
+0.12,Candida metapsilosis,Caspofungin,NA,WT,18,NA,0.25
+2,Candida metapsilosis,Fluconazole,NA,WT,9,NA,4
+0.12,Candida metapsilosis,Posaconazole,NA,WT,9,NA,0.25
+0.5,Candida metapsilosis,Anidulafungin,NA,WT,9,NA,0.5
+0.5,Candida metapsilosis,Micafungin,NA,WT,16,NA,1
+0.25,Cryptococcus neoformans,Fluconazole,NA,WT,2,NA,8
+1,Candida orthopsilosis,Micafungin,NA,WT,12,NA,1
+0.5,Aspergillus fumigatus,Isavuconazole,NA,WT,523,NA,1
+2,Aspergillus fumigatus,Isavuconazole,NA,non-WT,40,NA,1
+0.5,Aspergillus terreus species complex,Isavuconazole,NA,WT,29,NA,1
+1,Aspergillus terreus species complex,Voriconazole,NA,WT,2,NA,2
+2,Candida tropicalis,Anidulafungin,Resistant,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+2,Candida tropicalis,Caspofungin,Resistant,NA,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+1,Candida tropicalis,Micafungin,Resistant,non-WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+1,Candida pelliculosa,Itraconazole,NA,WT,2,NA,1
+1,Candida pelliculosa,Posaconazole,NA,WT,6,NA,2
+1,Aspergillus niger species complex,Isavuconazole,NA,WT,54,NA,4
+0.015,Saccharomyces cerevisiae,Voriconazole,NA,WT,5,NA,0.5
+1,Aspergillus flavus species complex,Isavuconazole,NA,WT,47,NA,1
+0.5,Aspergillus fumigatus,Amphotericin B,NA,WT,44,NA,2
+0.5,Candida orthopsilosis,Caspofungin,NA,WT,9,NA,1
+4,Candida metapsilosis,Fluconazole,NA,WT,3,NA,4
+0.12,Candida metapsilosis,Micafungin,NA,WT,10,NA,1
+0.12,Candida metapsilosis,Voriconazole,NA,non-WT,4,NA,0.06
+0.25,Aspergillus fumigatus,Isavuconazole,NA,WT,54,NA,1
+0.25,Candida orthopsilosis,Amphotericin B,NA,WT,14,NA,2
+0.06,Candida orthopsilosis,Itraconazole,NA,WT,14,NA,0.5
+0.03,Candida orthopsilosis,Posaconazole,NA,WT,17,NA,0.25
+0.12,Candida metapsilosis,Itraconazole,NA,WT,23,NA,1
+2,Aspergillus flavus species complex,Isavuconazole,NA,non-WT,5,NA,1
+2,Aspergillus niger species complex,Isavuconazole,NA,WT,43,NA,4
+8,Aspergillus fumigatus,Isavuconazole,NA,non-WT,7,NA,1
+4,Aspergillus fumigatus,Itraconazole,NA,non-WT,15,NA,1
+2,Aspergillus fumigatus,Voriconazole,Resistant,non-WT,22,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+2,Candida guilliermondii,Amphotericin B,NA,WT,2,NA,2
+16,Candida guilliermondii,Itraconazole,NA,non-WT,2,NA,2
+2,Candida guilliermondii,Posaconazole,NA,non-WT,2,NA,0.5
+0.12,Candida orthopsilosis,Anidulafungin,NA,WT,3,NA,2
+0.03,Candida orthopsilosis,Caspofungin,NA,WT,3,NA,1
+0.06,Candida orthopsilosis,Micafungin,NA,WT,1,NA,1
+0.25,Aspergillus flavus species complex,Itraconazole,NA,WT,27,NA,1
+0.5,Aspergillus niger species complex,Itraconazole,NA,WT,12,NA,4
+0.25,Aspergillus niger species complex,Posaconazole,NA,WT,19,NA,2
+0.12,Aspergillus niger species complex,Voriconazole,NA,WT,6,NA,2
+0.03,Candida krusei,Posaconazole,NA,WT,5,NA,0.5
+16,Rhodotorula mucilaginosa,Itraconazole,NA,non-WT,1,NA,4
+8,Rhodotorula mucilaginosa,Posaconazole,NA,non-WT,2,NA,4
+2,Aspergillus versicolor species complex,Amphotericin B,NA,WT,10,NA,2
+0.25,Aspergillus fumigatus,Amphotericin B,NA,WT,5,NA,2
+8,Candida glabrata,Posaconazole,NA,non-WT,10,NA,1
+256,Candida tropicalis,Fluconazole,Resistant,non-WT,6,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+16,Candida tropicalis,Itraconazole,NA,non-WT,2,NA,0.5
+16,Candida tropicalis,Posaconazole,NA,non-WT,2,NA,0.12
+16,Candida tropicalis,Voriconazole,Resistant,non-WT,4,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.25,Aspergillus niger species complex,Amphotericin B,NA,WT,30,NA,2
+0.008,Aspergillus niger species complex,Caspofungin,NA,WT,38,NA,0.25
+0.5,Candida auris,Anidulafungin,NA,WT,7,NA,1
+0.12,Candida auris,Caspofungin,NA,WT,8,NA,0.5
+0.25,Candida auris,Micafungin,NA,WT,9,NA,0.5
+2,Cryptococcus gattii species complex,Fluconazole,NA,WT,4,NA,16
+0.03,Cryptococcus gattii species complex,Voriconazole,NA,WT,3,NA,0.5
+2,Trichosporon asahii,Itraconazole,NA,non-WT,6,NA,1
+2,Trichosporon asahii,Posaconazole,NA,non-WT,3,NA,1
+0.06,Aspergillus terreus species complex,Caspofungin,NA,WT,7,NA,0.12
+1,Aspergillus terreus species complex,Isavuconazole,NA,WT,2,NA,1
+NA,Candida parapsilosis,Itraconazole,NA,NA,626,NA,0.5
+NA,Candida dubliniensis,Itraconazole,NA,NA,99,NA,0.25
+NA,Candida orthopsilosis,Itraconazole,NA,NA,43,NA,0.5
+NA,Candida glabrata,Itraconazole,NA,NA,795,NA,4
+NA,Candida tropicalis,Itraconazole,NA,NA,367,NA,0.5
+0.12,Candida orthopsilosis,Micafungin,NA,WT,5,NA,1
+0.5,Candida metapsilosis,Amphotericin B,NA,WT,35,NA,1
+128,Candida tropicalis,Fluconazole,Resistant,non-WT,5,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,1
+8,Candida tropicalis,Voriconazole,Resistant,non-WT,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+NA,Candida krusei,Itraconazole,NA,NA,137,NA,1
+NA,Cryptococcus neoformans,Itraconazole,NA,NA,134,NA,0.25
+NA,Candida lusitaniae,Itraconazole,NA,NA,66,NA,1
+128,Candida parapsilosis,Fluconazole,Resistant,non-WT,8,Sensitive: ≤ 2 <br>Intermediate: N/A <br>SDD: 4 <br>Resistant: ≥ 8,2
+2,Candida parapsilosis,Voriconazole,Resistant,NA,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+128,Candida orthopsilosis,Fluconazole,NA,non-WT,2,NA,2
+0.5,Candida orthopsilosis,Posaconazole,NA,non-WT,3,NA,0.25
+1,Candida orthopsilosis,Voriconazole,NA,non-WT,2,NA,0.12
+NA,Aspergillus flavus species complex,Amphotericin B,NA,NA,1,NA,4
+NA,Candida guilliermondii,Itraconazole,NA,NA,26,NA,2
+NA,Candida pelliculosa,Itraconazole,NA,NA,11,NA,1
+0.008,Candida pelliculosa,Micafungin,NA,WT,2,NA,0.12
+NA,Saccharomyces cerevisiae,Itraconazole,NA,NA,27,NA,2
+8,Candida glabrata,Caspofungin,Resistant,NA,4,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+1,Candida parapsilosis,Voriconazole,Resistant,NA,15,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+NA,Cryptococcus gattii species complex,Flucytosine,NA,NA,11,NA,4
+0.12,Candida haemulonii,Anidulafungin,NA,WT,5,NA,0.5
+0.03,Candida haemulonii,Voriconazole,NA,WT,3,NA,2
+NA,Candida kefyr,Itraconazole,NA,NA,38,NA,0.5
+0.5,Saccharomyces cerevisiae,Fluconazole,NA,WT,5,NA,32
+0.12,Saccharomyces cerevisiae,Posaconazole,NA,WT,10,NA,2
+NA,Candida metapsilosis,Itraconazole,NA,NA,15,NA,1
+0.03,Candida metapsilosis,Posaconazole,NA,WT,15,NA,0.25
+0.06,Saccharomyces cerevisiae,Caspofungin,NA,WT,12,NA,2
+0.06,Saccharomyces cerevisiae,Micafungin,NA,WT,6,NA,0.5
+NA,Rhodotorula mucilaginosa,Itraconazole,NA,NA,12,NA,4
+64,Trichosporon asahii,Fluconazole,NA,non-WT,6,NA,8
+0.5,Candida haemulonii,Anidulafungin,NA,WT,3,NA,0.5
+1,Candida haemulonii,Fluconazole,NA,WT,1,NA,128
+0.12,Candida haemulonii,Posaconazole,NA,WT,5,NA,1
+0.015,Candida haemulonii,Voriconazole,NA,WT,3,NA,2
+0.015,Candida metapsilosis,Voriconazole,NA,WT,29,NA,0.06
+32,Candida orthopsilosis,Fluconazole,NA,non-WT,3,NA,2
+0.5,Candida orthopsilosis,Voriconazole,NA,non-WT,5,NA,0.12
+8,Rhodotorula mucilaginosa,Voriconazole,NA,WT,2,NA,16
+2,Candida orthopsilosis,Anidulafungin,NA,WT,10,NA,2
+0.008,Candida orthopsilosis,Voriconazole,NA,WT,22,NA,0.12
+16,Aspergillus fumigatus,Voriconazole,Resistant,non-WT,4,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+0.03,Candida krusei,Micafungin,Sensitive,WT,12,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+64,Candida albicans,Fluconazole,Resistant,non-WT,1,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+1,Candida albicans,Voriconazole,Resistant,non-WT,2,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.008,Candida glabrata,Anidulafungin,Sensitive,WT,18,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+1,Candida metapsilosis,Anidulafungin,NA,non-WT,1,NA,0.5
+0.25,Candida metapsilosis,Caspofungin,NA,WT,4,NA,0.25
+0.25,Candida auris,Caspofungin,NA,WT,3,NA,0.5
+0.12,Aspergillus flavus species complex,Voriconazole,NA,WT,4,NA,2
+0.12,Aspergillus niger species complex,Itraconazole,NA,WT,3,NA,4
+0.06,Aspergillus niger species complex,Posaconazole,NA,WT,3,NA,2
+4,Candida glabrata,Micafungin,Resistant,non-WT,5,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+NA,Candida parapsilosis,Amphotericin B,NA,NA,1,NA,1
+0.25,Aspergillus niger species complex,Voriconazole,NA,WT,7,NA,2
+0.008,Aspergillus terreus species complex,Caspofungin,NA,WT,17,NA,0.12
+0.5,Candida haemulonii,Fluconazole,NA,WT,3,NA,128
+1,Aspergillus terreus species complex,Amphotericin B,NA,WT,18,NA,4
+0.12,Aspergillus terreus species complex,Posaconazole,NA,WT,13,NA,1
+0.12,Aspergillus terreus species complex,Voriconazole,NA,WT,8,NA,2
+0.12,Aspergillus terreus species complex,Itraconazole,NA,WT,2,NA,2
+0.008,Candida glabrata,Caspofungin,Sensitive,NA,21,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+0.03,Saccharomyces cerevisiae,Caspofungin,NA,WT,4,NA,2
+16,Rhodotorula mucilaginosa,Posaconazole,NA,non-WT,1,NA,4
+0.015,Candida kefyr,Micafungin,NA,WT,2,NA,0.12
+16,Candida orthopsilosis,Fluconazole,NA,non-WT,1,NA,2
+0.008,Candida parapsilosis,Posaconazole,NA,WT,6,NA,0.25
+0.12,Aspergillus flavus species complex,Posaconazole,NA,WT,11,NA,0.5
+0.25,Candida orthopsilosis,Fluconazole,NA,WT,23,NA,2
+8,Candida dubliniensis,Fluconazole,NA,non-WT,1,NA,0.5
+0.25,Candida krusei,Micafungin,Sensitive,WT,6,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.12,Candida lusitaniae,Amphotericin B,NA,WT,2,NA,2
+0.25,Candida pelliculosa,Amphotericin B,NA,WT,5,NA,1
+1,Candida kefyr,Fluconazole,NA,WT,7,NA,1
+8,Aspergillus fumigatus,Itraconazole,NA,non-WT,6,NA,1
+0.12,Candida orthopsilosis,Fluconazole,NA,WT,2,NA,2
+2,Candida metapsilosis,Anidulafungin,NA,non-WT,1,NA,0.5
+0.5,Candida metapsilosis,Caspofungin,NA,non-WT,1,NA,0.25
+0.5,Candida metapsilosis,Fluconazole,NA,WT,17,NA,4
+1,Candida metapsilosis,Micafungin,NA,WT,2,NA,1
+0.25,Candida metapsilosis,Posaconazole,NA,WT,2,NA,0.25
+16,Candida dubliniensis,Fluconazole,NA,non-WT,2,NA,0.5
+16,Candida pelliculosa,Fluconazole,NA,non-WT,3,NA,8
+NA,Candida pelliculosa,Micafungin,NA,NA,3,NA,0.12
+0.5,Candida pelliculosa,Voriconazole,NA,non-WT,4,NA,0.25
+2,Cryptococcus neoformans,Amphotericin B,NA,non-WT,4,NA,0.5
+0.03,Candida parapsilosis,Micafungin,Sensitive,WT,1,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.25,Candida orthopsilosis,Voriconazole,NA,non-WT,1,NA,0.12
+32,Candida albicans,Fluconazole,Resistant,non-WT,2,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.5,Cryptococcus neoformans,Voriconazole,NA,non-WT,1,NA,0.25
+1,Candida dubliniensis,Fluconazole,NA,non-WT,2,NA,0.5
+16,Candida tropicalis,Caspofungin,Resistant,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+2,Candida tropicalis,Micafungin,Resistant,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+16,Candida lusitaniae,Fluconazole,NA,non-WT,2,NA,1
+8,Candida metapsilosis,Fluconazole,NA,non-WT,2,NA,4
+8,Cryptococcus gattii species complex,Fluconazole,NA,WT,2,NA,16
+0.12,Cryptococcus gattii species complex,Voriconazole,NA,WT,5,NA,0.5
+0.25,Candida metapsilosis,Fluconazole,NA,WT,2,NA,4
+0.015,Candida haemulonii,Posaconazole,NA,WT,1,NA,1
+0.5,Candida kefyr,Anidulafungin,NA,non-WT,1,NA,0.25
+2,Saccharomyces cerevisiae,Amphotericin B,NA,WT,1,NA,2
+16,Saccharomyces cerevisiae,Fluconazole,NA,WT,4,NA,32
+0.03,Aspergillus niger species complex,Voriconazole,NA,WT,2,NA,2
+2,Rhodotorula mucilaginosa,Amphotericin B,NA,WT,2,NA,2
+0.03,Candida metapsilosis,Caspofungin,NA,WT,3,NA,0.25
+2,Candida orthopsilosis,Amphotericin B,NA,WT,1,NA,2
+0.25,Aspergillus terreus species complex,Isavuconazole,NA,WT,14,NA,1
+0.25,Candida albicans,Voriconazole,NA,non-WT,2,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.015,Candida parapsilosis,Anidulafungin,Sensitive,WT,1,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,4
+0.015,Candida parapsilosis,Caspofungin,Sensitive,WT,3,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,1
+8,Candida albicans,Posaconazole,NA,non-WT,1,NA,0.06
+8,Candida albicans,Voriconazole,Resistant,non-WT,1,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.06,Aspergillus fumigatus,Voriconazole,Sensitive,WT,1,Sensitive: ≤ 0.5 <br>Intermediate: 1 <br>Resistant: ≥ 2,1
+64,Candida pelliculosa,Fluconazole,NA,non-WT,1,NA,8
+2,Candida pelliculosa,Itraconazole,NA,non-WT,1,NA,1
+2,Candida pelliculosa,Posaconazole,NA,WT,2,NA,2
+2,Candida pelliculosa,Voriconazole,NA,non-WT,1,NA,0.25
+8,Aspergillus niger species complex,Isavuconazole,NA,non-WT,4,NA,4
+0.25,Cryptococcus gattii species complex,Amphotericin B,NA,WT,1,NA,0.5
+0.5,Cryptococcus gattii species complex,Itraconazole,NA,WT,3,NA,0.5
+0.5,Aspergillus flavus species complex,Isavuconazole,NA,WT,59,NA,1
+2,Candida dubliniensis,Fluconazole,NA,non-WT,1,NA,0.5
+1,Candida albicans,Anidulafungin,Resistant,non-WT,3,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+4,Candida albicans,Caspofungin,Resistant,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+2,Candida albicans,Micafungin,Resistant,non-WT,3,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+4,Aspergillus fumigatus,Isavuconazole,NA,non-WT,14,NA,1
+0.5,Candida metapsilosis,Itraconazole,NA,WT,1,NA,1
+8,Trichosporon asahii,Itraconazole,NA,non-WT,2,NA,1
+0.12,Cryptococcus neoformans,Amphotericin B,NA,WT,2,NA,0.5
+1,Aspergillus versicolor species complex,Amphotericin B,NA,WT,3,NA,2
+0.12,Aspergillus fumigatus,Isavuconazole,NA,WT,3,NA,1
+0.015,Candida krusei,Caspofungin,Sensitive,NA,3,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.008,Candida metapsilosis,Voriconazole,NA,WT,4,NA,0.06
+0.25,Candida auris,Anidulafungin,NA,WT,10,NA,1
+0.12,Saccharomyces cerevisiae,Itraconazole,NA,WT,7,NA,2
+0.004,Candida albicans,Voriconazole,Sensitive,WT,1243,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+8,Aspergillus niger species complex,Itraconazole,NA,non-WT,6,NA,4
+4,Aspergillus niger species complex,Voriconazole,NA,non-WT,2,NA,2
+0.004,Candida parapsilosis,Voriconazole,Sensitive,NA,124,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+0.004,Candida albicans,Anidulafungin,Sensitive,WT,217,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.004,Candida albicans,Micafungin,Sensitive,WT,71,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+0.002,Candida albicans,Voriconazole,Sensitive,WT,346,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+0.004,Aspergillus flavus species complex,Caspofungin,NA,WT,7,NA,0.5
+0.25,Aspergillus flavus species complex,Isavuconazole,NA,WT,13,NA,1
+NA,Aspergillus flavus species complex,Itraconazole,NA,NA,1,NA,1
+0.002,Candida parapsilosis,Voriconazole,Sensitive,NA,16,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+NA,Rhodotorula mucilaginosa,Posaconazole,NA,NA,1,NA,4
+0.03,Rhodotorula mucilaginosa,Voriconazole,NA,WT,1,NA,16
+0.015,Cryptococcus neoformans,Itraconazole,NA,WT,4,NA,0.25
+0.004,Aspergillus fumigatus,Caspofungin,NA,WT,13,NA,0.5
+0.015,Candida glabrata,Itraconazole,NA,WT,1,NA,4
+0.004,Candida albicans,Posaconazole,NA,WT,32,NA,0.06
+256,Candida guilliermondii,Fluconazole,NA,non-WT,7,NA,8
+0.004,Candida glabrata,Micafungin,Sensitive,WT,3,Sensitive: ≤ 0.06 <br>Intermediate: 0.12 <br>Resistant: ≥ 0.25,0.03
+0.008,Candida orthopsilosis,Posaconazole,NA,WT,1,NA,0.25
+0.06,Candida metapsilosis,Anidulafungin,NA,WT,1,NA,0.5
+0.06,Candida metapsilosis,Voriconazole,NA,WT,2,NA,0.06
+0.002,Candida albicans,Posaconazole,NA,WT,3,NA,0.06
+0.25,Rhodotorula mucilaginosa,Voriconazole,NA,WT,1,NA,16
+0.03,Candida orthopsilosis,Itraconazole,NA,WT,2,NA,0.5
+0.004,Candida orthopsilosis,Voriconazole,NA,WT,1,NA,0.12
+0.12,Aspergillus niger species complex,Amphotericin B,NA,WT,1,NA,2
+0.004,Aspergillus niger species complex,Caspofungin,NA,WT,1,NA,0.25
+0.12,Aspergillus terreus species complex,Isavuconazole,NA,WT,10,NA,1
+0.004,Candida tropicalis,Anidulafungin,Sensitive,WT,7,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.004,Candida tropicalis,Micafungin,Sensitive,WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.06
+1,Cryptococcus gattii species complex,Itraconazole,NA,non-WT,1,NA,0.5
+0.008,Candida krusei,Itraconazole,NA,WT,1,NA,1
+0.06,Candida dubliniensis,Amphotericin B,NA,WT,6,NA,0.5
+16,Aspergillus fumigatus,Isavuconazole,NA,non-WT,5,NA,1
+0.004,Aspergillus terreus species complex,Caspofungin,NA,WT,3,NA,0.12
+0.004,Candida tropicalis,Caspofungin,Sensitive,NA,4,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.25,Candida metapsilosis,Amphotericin B,NA,WT,3,NA,1
+0.06,Candida metapsilosis,Itraconazole,NA,WT,8,NA,1
+0.25,Rhodotorula mucilaginosa,Amphotericin B,NA,WT,3,NA,2
+0.004,Candida albicans,Caspofungin,Sensitive,NA,50,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+0.25,Candida dubliniensis,Posaconazole,NA,non-WT,3,NA,0.12
+0.03,Candida krusei,Itraconazole,NA,WT,2,NA,1
+64,Candida dubliniensis,Fluconazole,NA,non-WT,1,NA,0.5
+0.004,Candida glabrata,Itraconazole,NA,WT,1,NA,4
+0.06,Aspergillus terreus species complex,Isavuconazole,NA,WT,1,NA,1
+0.5,Aspergillus niger species complex,Isavuconazole,NA,WT,9,NA,4
+0.03,Candida albicans,Fluconazole,Sensitive,WT,21,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.015,Candida albicans,Fluconazole,Sensitive,WT,18,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.06,Candida auris,Anidulafungin,NA,WT,1,NA,1
+0.03,Candida auris,Caspofungin,NA,WT,1,NA,0.5
+0.06,Candida auris,Micafungin,NA,WT,1,NA,0.5
+0.002,Candida albicans,Anidulafungin,Sensitive,WT,57,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.12
+0.03,Candida dubliniensis,Fluconazole,NA,WT,1,NA,0.5
+0.12,Aspergillus flavus species complex,Isavuconazole,NA,WT,1,NA,1
+0.002,Candida albicans,Caspofungin,Sensitive,NA,23,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+32,Saccharomyces cerevisiae,Fluconazole,NA,WT,1,NA,32
+2,Saccharomyces cerevisiae,Posaconazole,NA,WT,1,NA,2
+0.5,Saccharomyces cerevisiae,Voriconazole,NA,WT,1,NA,0.5
+0.004,Candida glabrata,Anidulafungin,Sensitive,WT,6,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.004,Candida dubliniensis,Anidulafungin,NA,WT,1,NA,0.12
+0.002,Candida glabrata,Anidulafungin,Sensitive,WT,6,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,0.25
+0.004,Candida glabrata,Caspofungin,Sensitive,NA,4,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+0.03,Saccharomyces cerevisiae,Anidulafungin,NA,WT,5,NA,1
+0.002,Candida tropicalis,Anidulafungin,Sensitive,WT,2,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.002,Candida glabrata,Caspofungin,Sensitive,NA,1,Sensitive: ≤ 0.12 <br>Intermediate: 0.25 <br>Resistant: ≥ 0.5,NA
+0.015,Candida kefyr,Anidulafungin,NA,WT,4,NA,0.25
+0.002,Candida tropicalis,Caspofungin,Sensitive,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.06,Aspergillus terreus species complex,Voriconazole,NA,WT,2,NA,2
+0.002,Aspergillus fumigatus,Caspofungin,NA,WT,5,NA,0.5
+0.5,Candida kefyr,Itraconazole,NA,WT,1,NA,0.5
+0.008,Candida albicans,Fluconazole,Sensitive,WT,3,Sensitive: ≤ 2 <br>SDD: 4 <br>Resistant: ≥ 8,0.5
+0.004,Candida tropicalis,Voriconazole,Sensitive,WT,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: N/A <br>Resistant: ≥ 1,0.12
+0.004,Candida krusei,Anidulafungin,Sensitive,WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+8,Candida orthopsilosis,Fluconazole,NA,non-WT,3,NA,2
+0.12,Aspergillus flavus species complex,Itraconazole,NA,WT,1,NA,1
+0.06,Trichosporon asahii,Itraconazole,NA,WT,1,NA,1
+0.03,Trichosporon asahii,Itraconazole,NA,WT,1,NA,1
+0.12,Candida orthopsilosis,Amphotericin B,NA,WT,1,NA,2
+0.002,Candida pelliculosa,Micafungin,NA,WT,1,NA,0.12
+4,Candida guilliermondii,Itraconazole,NA,non-WT,3,NA,2
+0.25,Saccharomyces cerevisiae,Amphotericin B,NA,WT,4,NA,2
+8,Aspergillus flavus species complex,Amphotericin B,NA,non-WT,1,NA,4
+0.06,Candida glabrata,Fluconazole,SDD,WT,1,SDD: ≤ 32 <br>Resistant: ≥ 64,8
+0.004,Candida glabrata,Voriconazole,NA,WT,1,NA,0.25
+0.12,Candida auris,Anidulafungin,NA,WT,1,NA,1
+0.06,Candida auris,Caspofungin,NA,WT,7,NA,0.5
+0.12,Candida auris,Micafungin,NA,WT,9,NA,0.5
+0.06,Candida albicans,Amphotericin B,NA,WT,1,NA,2
+0.002,Candida albicans,Micafungin,Sensitive,WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.03
+2,Aspergillus terreus species complex,Isavuconazole,NA,non-WT,1,NA,1
+256,Candida orthopsilosis,Fluconazole,NA,non-WT,1,NA,2
+2,Candida orthopsilosis,Itraconazole,NA,non-WT,1,NA,0.5
+8,Candida orthopsilosis,Voriconazole,NA,non-WT,1,NA,0.12
+0.5,Candida dubliniensis,Anidulafungin,NA,non-WT,1,NA,0.12
+0.12,Aspergillus terreus species complex,Caspofungin,NA,WT,1,NA,0.12
+0.002,Aspergillus flavus species complex,Caspofungin,NA,WT,1,NA,0.5
+1,Candida orthopsilosis,Itraconazole,NA,non-WT,1,NA,0.5
+4,Candida orthopsilosis,Voriconazole,NA,non-WT,1,NA,0.12
+256,Trichosporon asahii,Fluconazole,NA,non-WT,1,NA,8
+4,Rhodotorula mucilaginosa,Itraconazole,NA,WT,1,NA,4
+16,Aspergillus niger species complex,Isavuconazole,NA,non-WT,2,NA,4
+0.03,Candida haemulonii,Posaconazole,NA,WT,1,NA,1
+0.008,Candida haemulonii,Voriconazole,NA,WT,1,NA,2
+NA,Aspergillus niger species complex,Caspofungin,NA,NA,1,NA,0.25
+16,Aspergillus niger species complex,Itraconazole,NA,non-WT,4,NA,4
+0.5,Aspergillus terreus species complex,Amphotericin B,NA,WT,1,NA,4
+4,Candida krusei,Anidulafungin,Resistant,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+8,Candida krusei,Caspofungin,Resistant,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,NA
+2,Candida krusei,Micafungin,Resistant,non-WT,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>Resistant: ≥ 1,0.25
+0.12,Candida kefyr,Amphotericin B,NA,WT,1,NA,2
+8,Candida lusitaniae,Fluconazole,NA,non-WT,1,NA,1
+0.03,Candida glabrata,Itraconazole,NA,WT,1,NA,4
+8,Candida haemulonii,Fluconazole,NA,WT,1,NA,128
+0.008,Candida parapsilosis,Micafungin,Sensitive,WT,1,Sensitive: ≤ 2 <br>Intermediate: 4 <br>SDD: N/A <br>Resistant: ≥ 8,2
+0.008,Saccharomyces cerevisiae,Voriconazole,NA,WT,1,NA,0.5
+1,Candida tropicalis,Caspofungin,Resistant,NA,1,Sensitive: ≤ 0.25 <br>Intermediate: 0.5 <br>SDD: N/A <br>Resistant: ≥ 1,NA
+0.06,Aspergillus niger species complex,Isavuconazole,NA,WT,1,NA,4
+2,Candida tropicalis,Itraconazole,NA,non-WT,1,NA,0.5
