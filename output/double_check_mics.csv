@@ -221,7 +221,7 @@ Candida albicans,Voriconazole,0.015,Sensitive,WT,960,Sensitive: ≤ 0.12  <br>In
 Candida albicans,Voriconazole,0.03,Sensitive,WT,197,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
 Candida albicans,Voriconazole,0.06,Sensitive,non-WT,33,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
 Candida albicans,Voriconazole,0.12,Sensitive,non-WT,16,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
-Candida albicans,Voriconazole,0.25,NA,non-WT,2,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
+Candida albicans,Voriconazole,0.25,Intermediate,non-WT,2,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
 Candida albicans,Voriconazole,0.5,Intermediate,non-WT,6,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
 Candida albicans,Voriconazole,1,Resistant,non-WT,2,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
 Candida albicans,Voriconazole,8,Resistant,non-WT,1,Sensitive: ≤ 0.12  <br>Intermediate: 0.25–0.5 <br>Resistant: ≥ 1,0.03
@@ -739,18 +739,18 @@ Candida parapsilosis,Posaconazole,0.12,NA,WT,712,NA,0.25
 Candida parapsilosis,Posaconazole,0.25,NA,WT,127,NA,0.25
 Candida parapsilosis,Posaconazole,0.5,NA,non-WT,20,NA,0.25
 Candida parapsilosis,Posaconazole,1,NA,non-WT,2,NA,0.25
-Candida parapsilosis,Voriconazole,0.002,Sensitive,NA,16,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.004,Sensitive,NA,124,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.008,Sensitive,NA,1057,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.015,Sensitive,NA,930,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.03,Sensitive,NA,336,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.06,Sensitive,NA,122,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.12,Sensitive,NA,53,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.25,NA,NA,59,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,0.5,Intermediate,NA,75,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,1,Resistant,NA,15,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,2,Resistant,NA,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
-Candida parapsilosis,Voriconazole,4,Resistant,NA,2,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>SDD: 4 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.002,Sensitive,NA,16,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.004,Sensitive,NA,124,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.008,Sensitive,NA,1057,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.015,Sensitive,NA,930,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.03,Sensitive,NA,336,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.06,Sensitive,NA,122,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.12,Sensitive,NA,53,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.25,Intermediate,NA,59,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,0.5,Intermediate,NA,75,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,1,Resistant,NA,15,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,2,Resistant,NA,3,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
+Candida parapsilosis,Voriconazole,4,Resistant,NA,2,Sensitive: ≤ 0.12 <br>Intermediate: 0.25-0.5 <br>Resistant: ≥ 1,NA
 Candida pelliculosa,Amphotericin B,0.25,NA,WT,5,NA,1
 Candida pelliculosa,Amphotericin B,0.5,NA,WT,25,NA,1
 Candida pelliculosa,Amphotericin B,1,NA,WT,16,NA,1

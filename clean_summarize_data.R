@@ -57,6 +57,8 @@ species_by_drug <-
   vivli_select %>%
   group_by(drug, Species) %>%
   summarize(n_tested = sum(!is.na(mic)), 
+            n_resistant = sum(resistance_status %in% "Resistant"),
+            n_WT = sum(ecv_status %in% "non-WT"),
             n_isos = n(), 
             prop_nonWT = sum(ecv_status %in% "non-WT")/sum(!is.na(ecv_status)), 
             prop_resistant = sum(resistance_status %in% "Resistant") / sum(!is.na(resistance_status)))
