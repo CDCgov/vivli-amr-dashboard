@@ -30,4 +30,17 @@ species_by_drug %>%
   pivot_wider(names_from = drug, values_from = table_val) %>%
   write_csv("output/modal_mic.csv")
 
-# figures by region, 
+# figures by region, country
+vivli_select %>%
+  distinct(Isolate_Id, Species, Country) %>%
+  count(Species, Country) %>%
+  mutate(total = sum(n), .by = c(Country)) %>%
+  pivot_wider(names_from = Species, values_from = n) %>%
+  write_csv("output/species_by_country.csv")
+
+vivli_select %>%
+  distinct(Isolate_Id, Species, WHO_region) %>%
+  count(Species, WHO_region) %>%
+  mutate(total = sum(n), .by = c(WHO_region)) %>%
+  pivot_wider(names_from = Species, values_from = n) %>%
+  write_csv("output/species_by_region.csv")
