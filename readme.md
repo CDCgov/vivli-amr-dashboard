@@ -4,9 +4,12 @@ Code for prototype dashboard.
 
 Challenge info: https://amr.vivli.org/data-challenge/data-challenge-overview/
 
-Published to Rconnect on EDAV here: https://rconnect.edav.cdc.gov/connect/#/apps/b7dea202-40bf-49ad-99d8-32a975978cff/access/818
+Published to CDCgov github pages here: https://cdcgov.github.io/vivli-amr-dashboard/vivli-amr-dashboard.html
 
 **General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
+Disclaimer:  
+
+**The findings and conclusions of this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention (CDC).** 
 
 ## Related documents
 
