@@ -1,5 +1,7 @@
 project:
   title: "vivli-amr-dashboard"
+  output-dir: docs
+
 
 
 
